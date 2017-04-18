@@ -6,18 +6,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Squalle0nhart Blog">
-    <title>Lưu trữ - Squalle0nhart Blog</title>
+    <title>Tag: blog - Squalle0nhart Blog</title>
     <meta name="author" content="Mây và Bão">
     
     
     
     <meta property="og:type" content="blog">
-<meta property="og:title" content="Lưu trữ">
-<meta property="og:url" content="https://squalle0nhart.github.io/all-archives/index.html">
+<meta property="og:title" content="Squalle0nhart Blog">
+<meta property="og:url" content="https://squalle0nhart.github.io/tags/blog/index.html">
 <meta property="og:site_name" content="Squalle0nhart Blog">
-<meta property="og:updated_time" content="2017-04-18T13:18:08.314Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Lưu trữ">
+<meta name="twitter:title" content="Squalle0nhart Blog">
 <meta property="fb:app_id" content="100001822658424">
     
     
@@ -224,108 +223,84 @@
                         hasCoverMetaIn
                         ">
                 
-<article class="post" itemscope itemType="http://schema.org/BlogPosting">
+    <section class="postShorten-group main-content-wrap">
     
     
-        <div class="post-header main-content-wrap text-left">
-    
-        <h1 class="post-title" itemprop="headline">
-            Lưu trữ
-        </h1>
-    
-    
-        <div class="post-meta">
-    <time itemprop="datePublished" datetime="2017-04-18T00:44:56+07:00">
+    <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title" itemprop="headline">
+                    
+                        <a class="link-unstyled" href="/2017/04/18/guide-create-hexo-blog/">
+                            Hướng dẫn tạo một Hexo Blog
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time itemprop="datePublished" datetime="2017-04-18T21:24:09+07:00">
 	
 		    Th04 18, 2017
     	
     </time>
     
-</div>
+        <span>trong </span>
+        
+    <a class="category-link" href="/categories/Web/">Web</a>
+
 
     
 </div>
-    
-    <div class="post-content markdown" itemprop="articleBody">
-        <div class="main-content-wrap">
+
+            </div>
             
+                <div class="postShorten-content" itemprop="articleBody">
+                    <p>Chào các bạn, thông thường để tạo một Blog cá nhân thì ta có rất nhiều lựa chọn như BlogSpot hay WordPress. Tuy nhiên trong bài này mình sẽ HD các bạn tạo một Blog cá nhân siêu đơn giản, nhanh chóng và đi kèm với các công cụ hỗ trợ tuyệt vời.</p>
+<p><strong><em>Bắt đầu nào</em></strong></p>
+<h3 id="Cai-dat-Hexo"><a href="#Cai-dat-Hexo" class="headerlink" title="Cài đặt Hexo"></a>Cài đặt Hexo</h3><p>  Trước khi cài đặt <strong>Hexo</strong> bạn cần phải cài đặt NodeJS và npm trước. Bạn có thể  download bản mới nhất tại <a href="https://nodejs.org/en" target="_blank" rel="external">https://nodejs.org/en/</a></p>
+<p>  Sau khi cài xong bạn mở CMD lên và gõ lệnh sau để cài đặt <strong>Hexo</strong> :<br>                npm install hexo-cli -g </p>
+<h3 id="Tao-Blog-cua-ban"><a href="#Tao-Blog-cua-ban" class="headerlink" title="Tạo Blog của bạn"></a>Tạo Blog của bạn</h3><p>  Sau khi cài đặt <strong>Hexo</strong> xong, để tạo Blog gõ lệnh sau vào termial hoặc cmd trên máy bạn :</p>
+<pre><code>hexo init &lt;blogname&gt;  
+</code></pre><p> bạn nhớ thay blogname bằng tên thư mục mà bạn muốn nhé. Đây là thư mục chứa các file trong blog của bạn.</p>
+<p> Bạn có thể xem demo Blog của mình trên máy bằng cách sử dụng công cụ hexo-server, bạn thực hiện 2 lệnh sau : </p>
+<pre><code>npm install 
+hexo server
+</code></pre><p>sau đó vào trình duyệt nhập: <code>localhost:4000</code> để kiểm tra kết quả.</p>
+<h3 id="Tim-va-cai-dat-theme"><a href="#Tim-va-cai-dat-theme" class="headerlink" title="Tìm và cài đặt theme"></a>Tìm và cài đặt theme</h3><p>Nếu bạn muốn thay đổi theme mặc định của hexo. Bạn có thể vào<a href="https://hexo.io/themes/" target="_blank" rel="external"> đây</a> để lựa chọn theme phù hợp với mình. Ở đây mình ví dụ với theme <a href="https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak" target="_blank" rel="external">tranquipeak</a> nhé . Từ thư mục gốc của Blog bạn gõ lệnh sau để download theme :</p>
+<pre><code>git clone https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak.git
+</code></pre><p>để đổi theme bạn cần tìm file <code>_config.yml</code> trong thư mục Blog của ban. Mở lên tìm dòng chứa thuộc tính  <code>theme</code> và sửa lại thành <code>tranquilpeak</code>.</p>
+<h3 id="Dang-bai-viet"><a href="#Dang-bai-viet" class="headerlink" title="Đăng bài viết"></a>Đăng bài viết</h3><p>Để bắt đầu viết bài bạn sử dụng câu lệnh sau:</p>
+<pre><code>hexo new post &quot;ten_bai_viet&quot; 
+</code></pre><p>lúc này trong thư mục  <code>source/_post</code> một file ten_bai_viet.md sẽ được tạo ra. Bạn có thể sử dụng bất cứ trình editor nào để viết bài miễn tuân thủ theo cấu trúc markdown là được . Thông tin chi tiết hơn có thể tìm thấy ở <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">đây</a>.</p>
+<p>###Sử dụng hosting miễn phí cho Blog của bạn<br>Bạn có thể sử dụng <strong>github</strong> để host miễn phí cho Blog của mình sau đó mọi người có thể truy cập Blog của bạn qua địa chỉ:<br><a href="https://username.github.io" target="_blank" rel="external">https://username.github.io</a><br>hoặc<br><a href="https://username.github.io/repository-name" target="_blank" rel="external">https://username.github.io/repository-name</a><br>    với username là tài khoản github của bạn. Trước hết bạn hãy đăng nhập vào github và tạo 1 repo nhé. Sau đó mở file <code>_config.yml</code> ra sửa lại thông tin deploy như sau :<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">type: git                                                           </div><div class="line">repo: &lt;thay bằng repo của ban&gt;</div><div class="line">branch: master</div></pre></td></tr></table></figure></p>
+<h3 id="Tao-va-Deploy-Blog"><a href="#Tao-va-Deploy-Blog" class="headerlink" title="Tạo và Deploy Blog"></a>Tạo và Deploy Blog</h3><p>Bước cuối cùng là tạo ra các static file và deploy Blog của bạn lên Github. Từ thư mục gốc của Blog bạn gõ lệnh sau vào cmd hay terminal:<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d -g</div></pre></td></tr></table></figure></p>
+<p><strong>Chú ý</strong>: Nếu bạn sử dụng SSH thì bạn phải tạo 1 SSH key và thêm vào GitHub thì mới deploy được nếu không sẽ bị lỗi. Bạn có thể xem hướng dẫn tạo SSH key tại <a href="https://help.github.com/articles/connecting-to-github-with-ssh/" target="_blank" rel="external">đây</a></p>
+
+                    
+                        
+                    
+                    
+                        <p>
+                            <a href="/2017/04/18/guide-create-hexo-blog/#post-footer" class="postShorten-excerpt_link link">
+                                Bình luận và chia sẻ
+                            </a>
+                        </p>
+                    
+                </div>
             
         </div>
-    </div>
-    <div id="post-footer" class="post-footer main-content-wrap">
+        
+    </article>
+    
+    <div class="pagination-bar">
+    <ul class="pagination">
         
         
-            <div class="post-actions-wrap">
-    <nav>
-        <ul class="post-actions post-action-nav">
-            <li class="post-action">
-                
-                    <a class="post-action-btn btn btn--disabled">
-                
-                    <i class="fa fa-angle-left"></i>
-                    <span class="hide-xs hide-sm text-small icon-ml">QUAY LẠI</span>
-                </a>
-            </li>
-            <li class="post-action">
-                
-                    <a class="post-action-btn btn btn--disabled">
-                
-                    <span class="hide-xs hide-sm text-small icon-mr">TIẾP</span>
-                    <i class="fa fa-angle-right"></i>
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <ul class="post-actions post-action-share">
-        <li class="post-action hide-lg hide-md hide-sm">
-            <a class="post-action-btn btn btn--default btn-open-shareoptions"  href="#btn-open-shareoptions">
-                <i class="fa fa-share-alt"></i>
-            </a>
-        </li>
-        
-            
-            
-            <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://squalle0nhart.github.io/all-archives/index.html">
-                    <i class="fa fa-facebook-official"></i>
-                </a>
-            </li>
-        
-            
-            
-            <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://squalle0nhart.github.io/all-archives/index.html">
-                    <i class="fa fa-twitter"></i>
-                </a>
-            </li>
-        
-            
-            
-            <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://squalle0nhart.github.io/all-archives/index.html">
-                    <i class="fa fa-google-plus"></i>
-                </a>
-            </li>
-        
-        
-        <li class="post-action">
-            
-                <a class="post-action-btn btn btn--default" href="#">
-            
-                <i class="fa fa-list"></i>
-            </a>
-        </li>
+        <li class="pagination-number">page 1 of 1</li>
     </ul>
 </div>
 
-
-        
-        
-            
-        
-    </div>
-</article>
-
+</section>
 
 
                 <footer id="footer" class="main-content-wrap">
@@ -431,8 +406,6 @@
         <!--SCRIPTS-->
 <script src="/assets/js/script-a4nsthihlnpcxinntqvn8bck0rkbk0mgbbktzhwgcb8coaiool6xbriz8qld.min.js"></script>
 <!--SCRIPTS END-->
-
-    
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment-with-locales.min.js"></script>
