@@ -232,15 +232,15 @@
             <div class="postShorten-header">
                 <h1 class="postShorten-title" itemprop="headline">
                     
-                        <a class="link-unstyled" href="/2017/04/17/hello-world/">
-                            Hello World
+                        <a class="link-unstyled" href="/2017/04/19/guide-create-hexo-blog/">
+                            (không có chủ đề)
                         </a>
                     
                 </h1>
                 <div class="postShorten-meta">
-    <time itemprop="datePublished" datetime="2017-04-17T21:39:22+07:00">
+    <time itemprop="datePublished" datetime="2017-04-19T00:05:01+07:00">
 	
-		    Th04 17, 2017
+		    Th04 19, 2017
     	
     </time>
     
@@ -249,76 +249,43 @@
             </div>
             
                 <div class="postShorten-content" itemprop="articleBody">
-                    <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+                    <hr>
+<p>title: Hướng dẫn tạo Blog đơn giản với Hexo và Nodejs<br>date: 2017-04-18 21:24:09<br>categories:<br>tags: [asp.net mvc, asp.net web api, action filters]<br>categories: [security, identity system]<br>keywords:</p>
+<ul>
+<li>blog</li>
+<li>web</li>
+<li>hexo</li>
+<li>nodejs</li>
+</ul>
+<hr>
+<p>Chào các bạn, thông thường để tạo một Blog cá nhân thì ta có rất nhiều lựa chọn như BlogSpot hay WordPress. Tuy nhiên trong bài này mình sẽ HD các bạn tạo một Blog cá nhân siêu đơn giản, nhanh chóng và đi kèm với các công cụ hỗ trợ tuyệt vời.</p>
+<p><strong><em>Bắt đầu nào</em></strong></p>
+<h3 id="Cai-dat-Hexo"><a href="#Cai-dat-Hexo" class="headerlink" title="Cài đặt Hexo"></a>Cài đặt Hexo</h3><p>  Trước khi cài đặt <strong>Hexo</strong> bạn cần phải cài đặt NodeJS và npm trước. Bạn có thể  download bản mới nhất tại <a href="https://nodejs.org/en" target="_blank" rel="external">https://nodejs.org/en/</a></p>
+<p>  Sau khi cài xong bạn mở CMD lên và gõ lệnh sau để cài đặt <strong>Hexo</strong> :<br>                npm install hexo-cli -g </p>
+<h3 id="Tao-Blog-cua-ban"><a href="#Tao-Blog-cua-ban" class="headerlink" title="Tạo Blog của bạn"></a>Tạo Blog của bạn</h3><p>  Sau khi cài đặt <strong>Hexo</strong> xong, để tạo Blog gõ lệnh sau vào termial hoặc cmd trên máy bạn :</p>
+<pre><code>hexo init &lt;blogname&gt;  
+</code></pre><p> bạn nhớ thay blogname bằng tên thư mục mà bạn muốn nhé. Đây là thư mục chứa các file trong blog của bạn.</p>
+<p> Bạn có thể xem demo Blog của mình trên máy bằng cách sử dụng công cụ hexo-server, bạn thực hiện 2 lệnh sau : </p>
+<pre><code>npm install 
+hexo server
+</code></pre><p>sau đó vào trình duyệt nhập: <code>localhost:4000</code> để kiểm tra kết quả.</p>
+<h3 id="Tim-va-cai-dat-theme"><a href="#Tim-va-cai-dat-theme" class="headerlink" title="Tìm và cài đặt theme"></a>Tìm và cài đặt theme</h3><p>Nếu bạn muốn thay đổi theme mặc định của hexo. Bạn có thể vào<a href="https://hexo.io/themes/" target="_blank" rel="external"> đây</a> để lựa chọn theme phù hợp với mình. Ở đây mình ví dụ với theme <a href="https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak" target="_blank" rel="external">tranquipeak</a> nhé . Từ thư mục gốc của Blog bạn gõ lệnh sau để download theme :</p>
+<pre><code>git clone https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak.git
+</code></pre><p>để đổi theme bạn cần tìm file <code>_config.yml</code> trong thư mục Blog của ban. Mở lên tìm dòng chứa thuộc tính  <code>theme</code> và sửa lại thành <code>tranquilpeak</code>.</p>
+<h3 id="Dang-bai-viet"><a href="#Dang-bai-viet" class="headerlink" title="Đăng bài viết"></a>Đăng bài viết</h3><p>Để bắt đầu viết bài bạn sử dụng câu lệnh sau:</p>
+<pre><code>hexo new post &quot;ten_bai_viet&quot; 
+</code></pre><p>lúc này trong thư mục  <code>source/_post</code> một file ten_bai_viet.md sẽ được tạo ra. Bạn có thể sử dụng bất cứ trình editor nào để viết bài miễn tuân thủ theo cấu trúc markdown là được . Thông tin chi tiết hơn có thể tìm thấy ở <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">đây</a>.</p>
+<p>###Sử dụng hosting miễn phí cho Blog của bạn<br>Bạn có thể sử dụng <strong>github</strong> để host miễn phí cho Blog của mình sau đó mọi người có thể truy cập Blog của bạn qua địa chỉ:</p>
+<p><a href="https://username.github.io" target="_blank" rel="external">https://username.github.io</a><br>hoặc<br><a href="https://username.github.io/repository-name" target="_blank" rel="external">https://username.github.io/repository-name</a><br>    với username là tài khoản github của bạn. Trước hết bạn hãy đăng nhập vào github và tạo 1 repo nhé. Sau đó mở file <code>_config.yml</code> ra sửa lại thông tin deploy như sau :<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">type: git                                                           </div><div class="line">repo: &lt;thay bằng repo của ban&gt;</div><div class="line">branch: master</div></pre></td></tr></table></figure></p>
+<h3 id="Tao-va-Deploy-Blog"><a href="#Tao-va-Deploy-Blog" class="headerlink" title="Tạo và Deploy Blog"></a>Tạo và Deploy Blog</h3><p>Bước cuối cùng là tạo ra các static file và deploy Blog của bạn lên Github. Từ thư mục gốc của Blog bạn gõ lệnh sau vào cmd hay terminal:<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d -g</div></pre></td></tr></table></figure></p>
+<p><strong>Chú ý</strong>: Nếu bạn sử dụng SSH thì bạn phải tạo 1 SSH key và thêm vào GitHub thì mới deploy được nếu không sẽ bị lỗi. Bạn có thể xem hướng dẫn tạo SSH key tại <a href="https://help.github.com/articles/connecting-to-github-with-ssh/" target="_blank" rel="external">đây</a></p>
 
                     
                         
                     
                     
                         <p>
-                            <a href="/2017/04/17/hello-world/#post-footer" class="postShorten-excerpt_link link">
-                                Bình luận và chia sẻ
-                            </a>
-                        </p>
-                    
-                </div>
-            
-        </div>
-        
-    </article>
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title" itemprop="headline">
-                    
-                        <a class="link-unstyled" href="/2014/11/05/2014-11-05-user-confirmed-filter-attribute/">
-                            ASP.NET User confirmed email filter attribute
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time itemprop="datePublished" datetime="2014-11-05T20:00:00+07:00">
-	
-		    Th11 05, 2014
-    	
-    </time>
-    
-        <span>trong </span>
-        
-    <a class="category-link" href="/categories/security/">security</a>, <a class="category-link" href="/categories/security/identity-system/">identity system</a>
-
-
-    
-</div>
-
-            </div>
-            
-                <div class="postShorten-content" itemprop="articleBody">
-                    <p><a href="https://www.asp.net/mvc/overview/older-versions-1/controllers-and-routing/understanding-action-filters-cs/" target="_blank" rel="external">Action filters</a> is a very powerful mechanism in an ASP.NET MVC application that gives us the capability of injecting functionality in our application in a centralized and structure way.<br>In this post I am showing how we can create an action filter attribute in order to decorate our controllers to check if the current user has verified his email address<br>after registering in our system through new ASP.NET <a href="http://www.asp.net/identity" target="_blank" rel="external">Identity system</a>. I am going to create two filters as we want to have this functionality in regular MVC controllers and in Web Api controllers as well.</p>
-<p>First lets see the code for the regular MVC controllers. What we have to do is just derive from ActionFilterAttribute class that lives in System.Web.Mvc namespace and override the OnActionExecuting method.<br><figure class="codeblock codeblock--tabbed"><figcaption><span>UserConfirmedFilterAttribute</span><ul class="tabs"><li class="tab active">cs</li></ul></figcaption><div class="tabs-content"><figure class="highlight cs" style="display: block;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">[AttributeUsage(AttributeTargets.Class | AttributeTargets.Method, AllowMultiple = <span class="literal">true</span>, Inherited = <span class="literal">true</span>)]</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">UserConfirmedFilterAttribute</span> : <span class="title">ActionFilterAttribute</span> {</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">OnActionExecuting</span>(<span class="params">ActionExecutingContext filterContext</span>) </span>{</span><br><span class="line">        <span class="keyword">var</span> userId = filterContext.HttpContext.User.Identity.GetUserId();</span><br><span class="line">        <span class="comment">// User is not logged in so redirect him to log in controller action</span></span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">string</span>.IsNullOrEmpty(userId)) {</span><br><span class="line">            filterContext.Result = <span class="keyword">new</span> RedirectToRouteResult(<span class="keyword">new</span> RouteValueDictionary(</span><br><span class="line">                        <span class="keyword">new</span> { controller = <span class="string">"Account"</span>, action = <span class="string">"Login"</span>, </span><br><span class="line">                                returnUrl = filterContext.HttpContext.Request.RawUrl }));</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        }</span><br><span class="line"></span><br><span class="line">        <span class="keyword">var</span> userManager = filterContext.HttpContext.GetOwinContext().GetUserManager&lt;ApplicationUserManager&gt;();</span><br><span class="line">        <span class="keyword">if</span> (!userManager.IsEmailConfirmed(userId)) {</span><br><span class="line">            filterContext.Result =</span><br><span class="line">                <span class="keyword">new</span> RedirectToRouteResult(</span><br><span class="line">                    <span class="keyword">new</span> RouteValueDictionary(<span class="keyword">new</span> { controller = <span class="string">"ConstrollerNameToRedirect"</span>, </span><br><span class="line">                                    action = <span class="string">"ActionMethodToRedirect"</span> }));</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        }</span><br><span class="line">        <span class="keyword">base</span>.OnActionExecuting(filterContext);</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure></div></figure></p>
-<p>The code is very simple as in the case the user has confirmed the email the execution flow continues normally. In the opposite case we are able to redirect the user<br>in a specific action of a controller by replacing the corresponding values.</p>
-<p>The code is very similar for Web Api controllers as we can see right below.</p>
-<figure class="codeblock codeblock--tabbed"><figcaption><span>UserConfirmedFilterAttribute</span><ul class="tabs"><li class="tab active">cs</li></ul></figcaption><div class="tabs-content"><figure class="highlight cs" style="display: block;"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">[AttributeUsage(AttributeTargets.Class | AttributeTargets.Method, AllowMultiple = <span class="literal">true</span>, Inherited = <span class="literal">true</span>)]</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">UserConfirmedWebApiFilterAttribute</span> : <span class="title">ActionFilterAttribute</span> {</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> Task <span class="title">OnActionExecutingAsync</span>(<span class="params">HttpActionContext actionContext, CancellationToken cancellationToken</span>) </span>{</span><br><span class="line">        <span class="keyword">var</span> userId = actionContext.RequestContext.Principal.Identity.GetUserId();</span><br><span class="line">        <span class="comment">// User is not logged in so redirect him to log in controller action</span></span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">string</span>.IsNullOrEmpty(userId)) {</span><br><span class="line">            actionContext.Response = actionContext.Request.CreateErrorResponse(HttpStatusCode.Unauthorized,</span><br><span class="line">                <span class="string">"You must be logged in to access this resource"</span>);</span><br><span class="line">            <span class="keyword">return</span> Task.FromResult(<span class="number">0</span>);</span><br><span class="line">        }</span><br><span class="line"></span><br><span class="line">        <span class="keyword">var</span> userManager = actionContext.Request.GetOwinContext().GetUserManager&lt;ApplicationUserManager&gt;();</span><br><span class="line">        <span class="keyword">if</span> (!userManager.IsEmailConfirmed(userId)) {</span><br><span class="line">            actionContext.Response = actionContext.Request.CreateErrorResponse(HttpStatusCode.BadRequest,</span><br><span class="line">                <span class="string">"You must be verify your email address in order to access this resource"</span>);</span><br><span class="line">            <span class="keyword">return</span> Task.FromResult(<span class="number">0</span>);</span><br><span class="line">        }</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">base</span>.OnActionExecutingAsync(actionContext, cancellationToken);</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure></div></figure>
-<p>Here I choose to implement the async version of OnActionExecuting method. If the user has confirmed the email address then the request is served normally.<br>If the user is not logged in or has not confirmed the email a bad request response is returned containing the additional message.</p>
-<p>You can find a complete <a href="https://github.com/xabikos/ActionFilters" target="_blank" rel="external">project</a> containing both of the attributes on Github.</p>
-
-                    
-                        
-                    
-                    
-                        <p>
-                            <a href="/2014/11/05/2014-11-05-user-confirmed-filter-attribute/#post-footer" class="postShorten-excerpt_link link">
+                            <a href="/2017/04/19/guide-create-hexo-blog/#post-footer" class="postShorten-excerpt_link link">
                                 Bình luận và chia sẻ
                             </a>
                         </p>
@@ -410,32 +377,13 @@
                 <div class="media">
                     
                     <div class="media-body">
-                        <a class="link-unstyled" href="https://squalle0nhart.github.io/2014/11/05/2014-11-05-user-confirmed-filter-attribute/">
-                            <h3 class="media-heading">ASP.NET User confirmed email filter attribute</h3>
+                        <a class="link-unstyled" href="https://squalle0nhart.github.io/2017/04/19/guide-create-hexo-blog/">
+                            <h3 class="media-heading"></h3>
                         </a>
                         <span class="media-meta">
                             <span class="media-date text-small">
                                 
-                                    5 Th11 2014
-                                
-                            </span>
-                        </span>
-                        <div class="media-content hide-xs font-merryweather"></div>
-                    </div>
-                    <div style="clear:both;"></div>
-                    <hr>
-                </div>
-                
-                <div class="media">
-                    
-                    <div class="media-body">
-                        <a class="link-unstyled" href="https://squalle0nhart.github.io/2017/04/17/hello-world/">
-                            <h3 class="media-heading">Hello World</h3>
-                        </a>
-                        <span class="media-meta">
-                            <span class="media-date text-small">
-                                
-                                    17 Th04 2017
+                                    19 Th04 2017
                                 
                             </span>
                         </span>
@@ -452,7 +400,7 @@
                 data-message-zero="không tìm thấy bài viết"
                 data-message-one="1 bài viết được tìm thấy"
                 data-message-other="{n} bài viết được tìm thấy">
-                2 bài viết được tìm thấy
+                1 bài viết được tìm thấy
             </p>
         </div>
     </div>
