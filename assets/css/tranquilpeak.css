@@ -1887,7 +1887,7 @@ a.fancybox {
   .post .post-content {
     text-rendering: optimizelegibility;
     letter-spacing: -0.3px;
-    font-family: "Merriweather", serif;
+    font-family: "Open Sans", sans-serif;
     color: #5d686f;
     margin-top: 20px;
     font-weight: 400;
@@ -2171,7 +2171,7 @@ a.fancybox {
   .postShorten .postShorten-content {
     text-rendering: optimizelegibility;
     letter-spacing: -0.3px;
-    font-family: "Merriweather", serif;
+    font-family: "Open Sans", sans-serif;
     color: #5d686f;
     font-weight: 400;
     overflow: hidden;
