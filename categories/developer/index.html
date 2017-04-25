@@ -256,12 +256,13 @@
             
                 <div class="postShorten-content" itemprop="articleBody">
                     <img src="/2017/04/26/git-basic/logo.png" alt="Hexo" title="Hexo">
-<h3 id="I-Git-la-gi"><a href="#I-Git-la-gi" class="headerlink" title="I.Git là gì ?"></a>I.Git là gì ?</h3><p> <strong>Git</strong> là một “<strong>Hệ thống quản lý phiên bản phân tán</strong>“. Nói đơn giản nó giúp bạn lưu lại phiên bản của các lần thay đổi mã nguồn và có thể dễ dàng tìm lại mà<br> không cần phải copy mã nguồn và lưu ở đâu đó. Một người khác cũng có thể xem các thay đổi này của bạn ở từng phiên bản, họ có thể đối chiếu sự thay đổi theo từng phiên bản của<br> bạn và gộp vào phiên bản của họ. Cuối cùng tất cả các phiên bản đều được đưa lên một kho chứa mã nguồn. </p>
+<p>  Đây là bài mình tổng hợp một số kiến thức cơ bản về Git, giúp bạn có thể hình dung được cách hoạt động git và sử dụng được một số tính năng cơ bản. Happy Time!</p>
+<h3 id="I-Git-la-gi"><a href="#I-Git-la-gi" class="headerlink" title="I. Git là gì ?"></a>I. Git là gì ?</h3><p> <strong>Git</strong> là một “<strong>Hệ thống quản lý phiên bản phân tán</strong>“. Nói đơn giản nó giúp bạn lưu lại phiên bản của các lần thay đổi mã nguồn và có thể dễ dàng tìm lại mà<br> không cần phải copy mã nguồn và lưu ở đâu đó. Một người khác cũng có thể xem các thay đổi này của bạn ở từng phiên bản, họ có thể đối chiếu sự thay đổi theo từng phiên bản của<br> bạn và gộp vào phiên bản của họ. Cuối cùng tất cả các phiên bản đều được đưa lên một kho chứa mã nguồn. </p>
 <p>Chú ý : <strong>Git</strong> là một mô hình hệ thống còn <strong>Github</strong> hay <strong>Gitlab</strong>… chỉ là một máy chủ dịch vụ xây dựng theo mô hình git giúp cho người dùng có thể tạo tài khoản và tự quản lý các kho<br>chứa mã nguồn riêng của mình </p>
-<h3 id="II-Cai-dat"><a href="#II-Cai-dat" class="headerlink" title="II.Cài đặt:"></a>II.Cài đặt:</h3><p>  Mac: <a href="https://git-scm.com/download/mac" target="_blank" rel="external">https://git-scm.com/download/mac</a></p>
+<h3 id="II-Cai-dat"><a href="#II-Cai-dat" class="headerlink" title="II. Cài đặt:"></a>II. Cài đặt:</h3><p>  Mac: <a href="https://git-scm.com/download/mac" target="_blank" rel="external">https://git-scm.com/download/mac</a></p>
 <p>  Windows: <a href="https://git-for-windows.github.io/" target="_blank" rel="external">https://git-for-windows.github.io/</a></p>
 <p>  Linux: <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank" rel="external">https://git-scm.com/book/en/v2/Getting-Started-Installing-Git</a></p>
-<h3 id="III-Tao-va-checkout-mot-repository"><a href="#III-Tao-va-checkout-mot-repository" class="headerlink" title="III.Tạo và checkout một repository"></a>III.Tạo và checkout một repository</h3><ul>
+<h3 id="III-Tao-va-checkout-mot-repository"><a href="#III-Tao-va-checkout-mot-repository" class="headerlink" title="III. Tạo và checkout một repository"></a>III. Tạo và checkout một repository</h3><ul>
 <li><p>Để tạo một repositort mới tạo một thư mục mới, mở nó lên và dùng lệnh: </p>
 <pre><code>git init. 
 </code></pre></li>
@@ -276,7 +277,7 @@
 </ol>
 </li>
 </ul>
-<h3 id="IV-Git-Workflow"><a href="#IV-Git-Workflow" class="headerlink" title="IV.Git Workflow"></a>IV.Git Workflow</h3><img src="/2017/04/26/git-basic/workflow.png" alt="Hexo" title="Hexo">
+<h3 id="IV-Git-Workflow"><a href="#IV-Git-Workflow" class="headerlink" title="IV. Git Workflow"></a>IV. Git Workflow</h3><img src="/2017/04/26/git-basic/workflow.png" alt="Hexo" title="Hexo">
 <p>Một repo của git bao gồm 3 khu vực chính: </p>
 <ul>
 <li><strong>Thư mục đang làm việc (Working directory)</strong>: Thư mục này lưu trữ các file mã nguồn của bạn.</li>
@@ -289,7 +290,7 @@
 <li>Git sẽ tạo 1 bản snapshot file này và đưa vào mục các file theo dõi (Staging Area) </li>
 <li>Bạn thực hiện commit, git sẽ lấy các file trong mục theo dõi và lưu các snapshot của file nó vào thư mục git của bạn</li>
 </ol>
-<h3 id="V-Lenh-add-va-commit"><a href="#V-Lenh-add-va-commit" class="headerlink" title="V.Lệnh add và commit :"></a>V.Lệnh add và commit :</h3><ul>
+<h3 id="V-Lenh-add-va-commit"><a href="#V-Lenh-add-va-commit" class="headerlink" title="V. Lệnh add và commit :"></a>V. Lệnh add và commit :</h3><ul>
 <li><p>Bạn có thể thêm các file vào mục staging area bằng lệnh add :</p>
 <pre><code>git add &lt;filename&gt;
 </code></pre><p> hoặc</p>
@@ -300,7 +301,7 @@
 <pre><code>git commit -m &quot;Commit message&quot;
 </code></pre></li>
 </ul>
-<h3 id="VI-Day-thay-doi-cua-ban-len-remote-repository"><a href="#VI-Day-thay-doi-cua-ban-len-remote-repository" class="headerlink" title="VI.Đẩy thay đổi của bạn lên remote repository"></a>VI.Đẩy thay đổi của bạn lên remote repository</h3><ul>
+<h3 id="VI-Day-thay-doi-cua-ban-len-remote-repository"><a href="#VI-Day-thay-doi-cua-ban-len-remote-repository" class="headerlink" title="VI. Đẩy thay đổi của bạn lên remote repository"></a>VI. Đẩy thay đổi của bạn lên remote repository</h3><ul>
 <li>Sau khi bạn đã commit xong thay đổi của bạn. Lúc này các thay đổi của bạn được ở mục <strong>HEAD</strong> (dễ hiểu hơn là phiên bản mới nhất). Bây giờ để đẩy các thay đổi mới nhất lên <strong>remote repository</strong> dùng lệnh sau</li>
 </ul>
 <pre><code>    git push origin master                 
@@ -310,7 +311,7 @@ trong đó **master** là nhánh bạn muốn đẩy lên.
 <li>Nếu <strong>local repository</strong> của bạn chưa được kết nối với remote server thì dùng lệnh: </li>
 </ul>
 <pre><code>git remote add origin &lt;server&gt;
-</code></pre><h3 id="VII-Nhanh-Branch"><a href="#VII-Nhanh-Branch" class="headerlink" title="VII.Nhánh (Branch)"></a>VII.Nhánh (Branch)</h3><p>Trong git <strong>Branch</strong> được dùng để tách biệt môi trường làm việc cho developer. </p>
+</code></pre><h3 id="VII-Nhanh-Branch"><a href="#VII-Nhanh-Branch" class="headerlink" title="VII. Nhánh (Branch)"></a>VII. Nhánh (Branch)</h3><p>Trong git <strong>Branch</strong> được dùng để tách biệt môi trường làm việc cho developer. </p>
 <img src="/2017/04/26/git-basic/branch.png" alt="Hexo" title="Hexo">
 <p>Ví dụ: <strong>Bạn muốn tạo ra một phiên bản thử nghiệm với môi trường code hiện tại nhưng lại không muốn nó ảnh hưởng tới các file code hiện tại, việc này có thể thực hiện bằng cách clone lại chính repository bạn đang dùng hoặc copy ra một chỗ khác nhưng 2 cách trên đều rất mất công và khó khăn cho việc đồng bộ hóa code</strong>. </p>
 <p>Để xử lý vấn đề trên <strong>Git</strong> cung cấp cho ta cơ chế phân nhánh. Nhánh ban đầu khi bạn tạo repository là nhánh <strong>master</strong>, nhánh này dùng để chứa các code chính trong project</p>
@@ -329,7 +330,7 @@ trong đó **master** là nhánh bạn muốn đẩy lên.
 <pre><code>git push origin &lt;tên nhánh&gt;
 </code></pre></li>
 </ul>
-<h3 id="VIII-Cap-nhat-va-tich-hop-update-and-merge"><a href="#VIII-Cap-nhat-va-tich-hop-update-and-merge" class="headerlink" title="VIII.Cập nhật và tích hợp (update and merge)"></a>VIII.Cập nhật và tích hợp (update and merge)</h3><img src="/2017/04/26/git-basic/pull.png" alt="Hexo" title="Hexo">
+<h3 id="VIII-Cap-nhat-va-tich-hop-update-and-merge"><a href="#VIII-Cap-nhat-va-tich-hop-update-and-merge" class="headerlink" title="VIII. Cập nhật và tích hợp (update and merge)"></a>VIII. Cập nhật và tích hợp (update and merge)</h3><img src="/2017/04/26/git-basic/pull.png" alt="Hexo" title="Hexo">
 <ul>
 <li><p><strong>Pull</strong>: Để cập nhật local repository của bạn với lần commit mới nhất trên remote repository dùng lệnh:</p>
 <pre><code>git pull
@@ -340,7 +341,7 @@ trong đó **master** là nhánh bạn muốn đẩy lên.
 </code></pre><p><strong>Chú ý:</strong> Trong cả 2 trường hợp trên Git sẽ cố gắng tự merge code của bạn. Tuy nhiên đôi khi sẽ có xung đột(conflict) mà Git không thể trộn code được. Lúc này bạn phải xử lý các xung đột thủ công bằng cách chỉnh sửa các tập tin được thông báo.</p>
 </li>
 </ul>
-<h3 id="IX-Nhan-Tag"><a href="#IX-Nhan-Tag" class="headerlink" title="IX.Nhãn (Tag)"></a>IX.Nhãn (Tag)</h3><p>Mỗi khi phát hành một phiên bản của phần mềm ta nên tạo nhãn (tag) cho phiên bản đó. Để tạo 1 tag mới ta dùng lệnh sau:</p>
+<h3 id="IX-Nhan-Tag"><a href="#IX-Nhan-Tag" class="headerlink" title="IX. Nhãn (Tag)"></a>IX. Nhãn (Tag)</h3><p>Mỗi khi phát hành một phiên bản của phần mềm ta nên tạo nhãn (tag) cho phiên bản đó. Để tạo 1 tag mới ta dùng lệnh sau:</p>
 <pre><code>git tag &lt;tên phiên bản&gt;  &lt;checksum&gt;
 </code></pre><ul>
 <li><strong><checksum></checksum></strong> ở đây thường là mã commit của bạn hoặc 1 đoạn trong mã commit.</li>
