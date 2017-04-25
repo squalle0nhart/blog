@@ -6,14 +6,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Squalle0nhart Blog">
-    <title>Tag: blog - Squalle0nhart Blog</title>
+    <title>Tag: developer - Squalle0nhart Blog</title>
     <meta name="author" content="Mây và Bão">
     
     
     
     <meta property="og:type" content="blog">
 <meta property="og:title" content="Squalle0nhart Blog">
-<meta property="og:url" content="https://squalle0nhart.github.io/tags/blog/index.html">
+<meta property="og:url" content="https://squalle0nhart.github.io/tags/developer/index.html">
 <meta property="og:site_name" content="Squalle0nhart Blog">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Squalle0nhart Blog">
@@ -232,8 +232,8 @@
             <div class="postShorten-header">
                 <h1 class="postShorten-title" itemprop="headline">
                     
-                        <a class="link-unstyled" href="/2017/04/18/guide-create-hexo-blog/">
-                            Hướng dẫn tạo Blog đơn giản với Hexo và Nodejs
+                        <a class="link-unstyled" href="/2017/04/18/git-basic/">
+                            Git-Cơ bản về Git
                         </a>
                     
                 </h1>
@@ -246,7 +246,7 @@
     
         <span>trong </span>
         
-    <a class="category-link" href="/categories/Web/">Web</a>
+    <a class="category-link" href="/categories/developer/">developer</a>
 
 
     
@@ -255,34 +255,79 @@
             </div>
             
                 <div class="postShorten-content" itemprop="articleBody">
-                    <img src="/2017/04/18/guide-create-hexo-blog/hexo.jpg" alt="Hexo" title="Hexo">
-<p>Chào các bạn, thông thường để tạo một Blog cá nhân thì ta có rất nhiều lựa chọn như BlogSpot hay WordPress. Tuy nhiên trong bài này mình sẽ HD các bạn tạo một Blog cá nhân siêu đơn giản, nhanh chóng và đi kèm với các công cụ hỗ trợ tuyệt vời.</p>
-<p><strong><em>Bắt đầu nào</em></strong></p>
-<h3 id="Cai-dat-Hexo"><a href="#Cai-dat-Hexo" class="headerlink" title="Cài đặt Hexo"></a>Cài đặt Hexo</h3><p>  Trước khi cài đặt <strong>Hexo</strong> bạn cần phải cài đặt NodeJS và npm trước. Bạn có thể  download bản mới nhất tại <a href="https://nodejs.org/en" target="_blank" rel="external">https://nodejs.org/en/</a></p>
-<p>  Sau khi cài xong bạn mở CMD lên và gõ lệnh sau để cài đặt <strong>Hexo</strong> :<br>                npm install hexo-cli -g </p>
-<h3 id="Tao-Blog-cua-ban"><a href="#Tao-Blog-cua-ban" class="headerlink" title="Tạo Blog của bạn"></a>Tạo Blog của bạn</h3><p>  Sau khi cài đặt <strong>Hexo</strong> xong, để tạo Blog gõ lệnh sau vào termial hoặc cmd trên máy bạn :</p>
-<pre><code>hexo init &lt;blogname&gt;  
-</code></pre><p> bạn nhớ thay blogname bằng tên thư mục mà bạn muốn nhé. Đây là thư mục chứa các file trong blog của bạn.</p>
-<p> Bạn có thể xem demo Blog của mình trên máy bằng cách sử dụng công cụ hexo-server, bạn thực hiện 2 lệnh sau : </p>
-<pre><code>npm install 
-hexo server
-</code></pre><p>sau đó vào trình duyệt nhập: <code>localhost:4000</code> để kiểm tra kết quả.</p>
-<h3 id="Tim-va-cai-dat-theme"><a href="#Tim-va-cai-dat-theme" class="headerlink" title="Tìm và cài đặt theme"></a>Tìm và cài đặt theme</h3><p>Nếu bạn muốn thay đổi theme mặc định của hexo. Bạn có thể vào<a href="https://hexo.io/themes/" target="_blank" rel="external"> đây</a> để lựa chọn theme phù hợp với mình. Ở đây mình ví dụ với theme <a href="https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak" target="_blank" rel="external">tranquipeak</a> nhé . Từ thư mục gốc của Blog bạn gõ lệnh sau để download theme :</p>
-<pre><code>git clone https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak.git
-</code></pre><p>để đổi theme bạn cần tìm file <code>_config.yml</code> trong thư mục Blog của ban. Mở lên tìm dòng chứa thuộc tính  <code>theme</code> và sửa lại thành <code>tranquilpeak</code>.</p>
-<h3 id="Dang-bai-viet"><a href="#Dang-bai-viet" class="headerlink" title="Đăng bài viết"></a>Đăng bài viết</h3><p>Để bắt đầu viết bài bạn sử dụng câu lệnh sau:</p>
-<pre><code>hexo new post &quot;ten_bai_viet&quot; 
-</code></pre><p>lúc này trong thư mục  <code>source/_post</code> một file ten_bai_viet.md sẽ được tạo ra. Bạn có thể sử dụng bất cứ trình editor nào để viết bài miễn tuân thủ theo cấu trúc markdown là được . Thông tin chi tiết hơn có thể tìm thấy ở <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">đây</a>.</p>
-<p>###Sử dụng hosting miễn phí cho Blog của bạn<br>Bạn có thể sử dụng <strong>github</strong> để host miễn phí cho Blog của mình sau đó mọi người có thể truy cập Blog của bạn qua địa chỉ:<br><a href="https://username.github.io" target="_blank" rel="external">https://username.github.io</a><br>hoặc<br><a href="https://username.github.io/repository-name" target="_blank" rel="external">https://username.github.io/repository-name</a><br>    với username là tài khoản github của bạn. Trước hết bạn hãy đăng nhập vào github và tạo 1 repo nhé. Sau đó mở file <code>_config.yml</code> ra sửa lại thông tin deploy như sau :<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">type: git                                                           </div><div class="line">repo: &lt;thay bằng repo của ban&gt;</div><div class="line">branch: master</div></pre></td></tr></table></figure></p>
-<h3 id="Tao-va-Deploy-Blog"><a href="#Tao-va-Deploy-Blog" class="headerlink" title="Tạo và Deploy Blog"></a>Tạo và Deploy Blog</h3><p>Bước cuối cùng là tạo ra các static file và deploy Blog của bạn lên Github. Từ thư mục gốc của Blog bạn gõ lệnh sau vào cmd hay terminal:<br>   <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d -g</div></pre></td></tr></table></figure></p>
-<p><strong>Chú ý</strong>: Nếu bạn sử dụng SSH thì bạn phải tạo 1 SSH key và thêm vào GitHub thì mới deploy được nếu không sẽ bị lỗi. Bạn có thể xem hướng dẫn tạo SSH key tại <a href="https://help.github.com/articles/connecting-to-github-with-ssh/" target="_blank" rel="external">đây</a></p>
+                    <h1 id="Co-ban-ve-Git"><a href="#Co-ban-ve-Git" class="headerlink" title="Cơ bản về Git"></a>Cơ bản về Git</h1><img src="/2017/04/18/git-basic/logo.png" alt="Hexo" title="Hexo">
+<h3 id="Git-la-gi"><a href="#Git-la-gi" class="headerlink" title="Git là gì ?"></a>Git là gì ?</h3><p> <strong>Git</strong> là một “<strong>Hệ thống quản lý phiên bản phân tán</strong>“. Nói đơn giản nó giúp bạn lưu lại phiên bản của các lần thay đổi mã nguồn và có thể dễ dàng tìm lại mà<br> không cần phải copy mã nguồn và lưu ở đâu đó. Một người khác cũng có thể xem các thay đổi này của bạn ở từng phiên bản, họ có thể đối chiếu sự thay đổi theo từng phiên bản của<br> bạn và gộp vào phiên bản của họ. Cuối cùng tất cả các phiên bản đều được đưa lên một kho chứa mã nguồn. </p>
+<p>Chú ý : <strong>Git</strong> là một mô hình hệ thống còn <strong>Github</strong> hay <strong>Gitlab</strong>… chỉ là một máy chủ dịch vụ xây dựng theo mô hình git giúp cho người dùng có thể tạo tài khoản và tự quản lý các kho<br>chứa mã nguồn riêng của mình </p>
+<h3 id="Cai-dat"><a href="#Cai-dat" class="headerlink" title="Cài đặt:"></a>Cài đặt:</h3><p>  Mac: <a href="https://git-scm.com/download/mac" target="_blank" rel="external">https://git-scm.com/download/mac</a></p>
+<p>  Windows: <a href="https://git-for-windows.github.io/" target="_blank" rel="external">https://git-for-windows.github.io/</a></p>
+<p>  Linux: <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank" rel="external">https://git-scm.com/book/en/v2/Getting-Started-Installing-Git</a></p>
+<h3 id="Tao-va-checkout-mot-repository"><a href="#Tao-va-checkout-mot-repository" class="headerlink" title="Tạo và checkout một repository"></a>Tạo và checkout một repository</h3><ul>
+<li><p>Để tạo một repositort mới tạo một thư mục mới, mở nó lên và dùng lệnh: </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git init.</div></pre></td></tr></table></figure>
+</li>
+<li><p>Để checkout một repo</p>
+<ul>
+<li><p>Đối với Repo nội bộ: </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone /path/to/repository</div></pre></td></tr></table></figure>
+<ul>
+<li><p>Đối với Remote repo:  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">                       git clone username@host:/path/to/repository</div><div class="line">```        </div><div class="line">                        </div><div class="line">### Git Workflow </div><div class="line"></div><div class="line">&#123;% asset_img workflow.png Hexo %&#125;</div><div class="line"></div><div class="line">Một repo của git bao gồm 3 khu vực chính: </div><div class="line">* **Thư mục đang làm việc (Working directory)**: Thư mục này lưu trữ các file mã nguồn của bạn.</div><div class="line">*  **Index (hay Stagging Area)**: Chứa thông tin các file chuẩn bị được commit </div><div class="line">*  **Repository**: Kho chứa mã nguồn, nơi lưu lại tất cả các phiên bản mã nguồn của bạn</div><div class="line">	</div><div class="line">Thông thường git sẽ hoạt động theo luồng như sau: </div><div class="line">1. Bạn sửa file trong thư mục đang làm việc (working directory)</div><div class="line">2. Git sẽ tạo 1 bản snapshot file này và đưa vào mục các file theo dõi (Staging Area) </div><div class="line">3. Bạn thực hiện commit, git sẽ lấy các file trong mục theo dõi và lưu các snapshot của file nó vào thư mục git của bạn</div><div class="line">		</div><div class="line">### Lệnh add và commit :</div><div class="line">1. Bạn có thể thêm các file vào mục staging area bằng lệnh add :</div></pre></td></tr></table></figure>
+<pre><code>git add &lt;filename&gt;
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">   hoặc</div><div class="line">	```							</div><div class="line">                        git add </div><div class="line">    ```                            </div><div class="line">   để thêm 1 file cụ thể hoặc tất cả vào mục staging area</div><div class="line">   </div><div class="line">2. Lưu các thay đổi vào local repo của bạn</div></pre></td></tr></table></figure>
+<pre><code>git commit -m &quot;Commit message&quot;
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">### Đẩy thay đổi của bạn lên remote repository</div><div class="line">* Sau khi bạn đã commit xong thay đổi của bạn. Lúc này các thay đổi của bạn được ở mục **HEAD** (dễ hiểu hơn là phiên bản mới nhất). Bây giờ để đẩy các thay đổi mới nhất lên **remote repository** dùng lệnh sau</div></pre></td></tr></table></figure>
+<pre><code>git push origin master                 
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">    trong đó **master** là nhánh bạn muốn đẩy lên.</div><div class="line"></div><div class="line">* Nếu **local repository** của bạn chưa được kết nối với remote server thì dùng lệnh:</div></pre></td></tr></table></figure>
+<pre><code>git remote add origin &lt;server&gt;
+</code></pre><p>```</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="Nhanh-Branch"><a href="#Nhanh-Branch" class="headerlink" title="Nhánh (Branch)"></a>Nhánh (Branch)</h3><p>Trong git <strong>Branch</strong> được dùng để tách biệt môi trường làm việc cho developer. </p>
+<img src="/2017/04/18/git-basic/branch.png" alt="Hexo" title="Hexo">
+<p>Ví dụ: <strong>Bạn muốn tạo ra một phiên bản thử nghiệm với môi trường code hiện tại nhưng lại không muốn nó ảnh hưởng tới các file code hiện tại, việc này có thể thực hiện bằng cách clone lại chính repository bạn đang dùng hoặc copy ra một chỗ khác nhưng 2 cách trên đều rất mất công và khó khăn cho việc đồng bộ hóa code</strong>. </p>
+<p>Để xử lý vấn đề trên <strong>Git</strong> cung cấp cho ta cơ chế phân nhánh. Nhánh ban đầu khi bạn tạo repository là nhánh <strong>master</strong>, nhánh này dùng để chứa các code chính trong project</p>
+<ul>
+<li><p>Tạo một nhánh: quay lại ví dụ lúc nãy để tạo một bản thử nghiệm bạn muốn mà không làm ảnh hưởng tới các file code hiện tại bạn cần tạo một nhánh mới gọi là <strong>develop</strong> bằng lệnh:</p>
+<pre><code>git checkout -b develop
+</code></pre><p>  lúc này toàn bộ mã nguồn từ nhánh master sẽ được copy sang nhánh <strong>develop</strong>, <strong>mọi thay đổi</strong> trên nhánh <strong>develop</strong> sẽ không ảnh hưởng tới nhánh <strong>master</strong> và ngược lại.</p>
+</li>
+<li><p>Chuyển nhánh: Để chuyển nhánh ta dùng lệnh</p>
+<pre><code>git checkout &lt;tên nhánh&gt;
+</code></pre></li>
+<li><p>Xóa nhánh: Để xóa một nhánh dùng lệnh sau </p>
+<pre><code>git branch -d &lt;tên nhánh&gt;
+</code></pre></li>
+<li><p>Cập nhật lên remote repository: Để người khác thấy được nhánh của bạn thì phải push nhánh đó lên remote repository bằng lệnh sau</p>
+<pre><code>git push origin &lt;tên nhánh&gt;
+</code></pre></li>
+</ul>
+<h3 id="Cap-nhat-va-tich-hop-update-and-merge"><a href="#Cap-nhat-va-tich-hop-update-and-merge" class="headerlink" title="Cập nhật và tích hợp (update and merge)"></a>Cập nhật và tích hợp (update and merge)</h3><img src="/2017/04/18/git-basic/pull.png" alt="Hexo" title="Hexo">
+<ul>
+<li><p><strong>Pull</strong>: Để cập nhật local repository của bạn với lần commit mới nhất trên remote repository dùng lệnh:</p>
+<pre><code>git pull
+</code></pre><p>  lệnh này sẽ tự động lấy code mới trên remote về(fetch) và tiến hành trộn(merge_ với local repository của bạn </p>
+</li>
+<li><p>Trộn nhánh: Để trộn một nhánh bất kỳ vào nhánh bạn đang sử dụng dùng lệnh sau</p>
+<pre><code>git merge &lt;tên nhánh&gt;
+</code></pre><p><strong>Chú ý:</strong> Trong cả 2 trường hợp trên Git sẽ cố gắng tự merge code của bạn. Tuy nhiên đôi khi sẽ có xung đột(conflict) mà Git không thể trộn code được. Lúc này bạn phải xử lý các xung đột thủ công bằng cách chỉnh sửa các tập tin được thông báo.</p>
+</li>
+</ul>
+<h3 id="Nhan-Tag"><a href="#Nhan-Tag" class="headerlink" title="Nhãn (Tag)"></a>Nhãn (Tag)</h3><p>Mỗi khi phát hành một phiên bản của phần mềm ta nên tạo nhãn (tag) cho phiên bản đó. Để tạo 1 tag mới ta dùng lệnh sau:</p>
+<pre><code>git tag &lt;tên phiên bản&gt;  &lt;checksum&gt;
+</code></pre><ul>
+<li><strong><checksum></checksum></strong> ở đây thường là mã commit của bạn hoặc 1 đoạn trong mã commit.</li>
+</ul>
 
                     
                         
                     
                     
                         <p>
-                            <a href="/2017/04/18/guide-create-hexo-blog/#post-footer" class="postShorten-excerpt_link link">
+                            <a href="/2017/04/18/git-basic/#post-footer" class="postShorten-excerpt_link link">
                                 Bình luận và chia sẻ
                             </a>
                         </p>
