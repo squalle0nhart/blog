@@ -288,18 +288,18 @@
 <li>Git sẽ tạo 1 bản snapshot file này và đưa vào mục các file theo dõi (Staging Area) </li>
 <li>Bạn thực hiện commit, git sẽ lấy các file trong mục theo dõi và lưu các snapshot của file nó vào thư mục git của bạn</li>
 </ol>
-<h3 id="Lenh-add-va-commit"><a href="#Lenh-add-va-commit" class="headerlink" title="Lệnh add và commit :"></a>Lệnh add và commit :</h3><ol>
-<li>Bạn có thể thêm các file vào mục staging area bằng lệnh add :</li>
-</ol>
+<h3 id="Lenh-add-va-commit"><a href="#Lenh-add-va-commit" class="headerlink" title="Lệnh add và commit :"></a>Lệnh add và commit :</h3><ul>
+<li><p>Bạn có thể thêm các file vào mục staging area bằng lệnh add :</p>
 <pre><code>git add &lt;filename&gt;
-</code></pre><p>   hoặc</p>
+</code></pre><p> hoặc</p>
 <pre><code>git add 
-</code></pre><p>   để thêm 1 file cụ thể hoặc tất cả vào mục staging area</p>
-<ol>
-<li>Lưu các thay đổi vào local repo của bạn </li>
-</ol>
+</code></pre><p> để thêm 1 file cụ thể hoặc tất cả vào mục staging area.</p>
+</li>
+<li><p>Lưu các thay đổi vào local repo của bạn </p>
 <pre><code>git commit -m &quot;Commit message&quot;
-</code></pre><h3 id="Day-thay-doi-cua-ban-len-remote-repository"><a href="#Day-thay-doi-cua-ban-len-remote-repository" class="headerlink" title="Đẩy thay đổi của bạn lên remote repository"></a>Đẩy thay đổi của bạn lên remote repository</h3><ul>
+</code></pre></li>
+</ul>
+<h3 id="Day-thay-doi-cua-ban-len-remote-repository"><a href="#Day-thay-doi-cua-ban-len-remote-repository" class="headerlink" title="Đẩy thay đổi của bạn lên remote repository"></a>Đẩy thay đổi của bạn lên remote repository</h3><ul>
 <li>Sau khi bạn đã commit xong thay đổi của bạn. Lúc này các thay đổi của bạn được ở mục <strong>HEAD</strong> (dễ hiểu hơn là phiên bản mới nhất). Bây giờ để đẩy các thay đổi mới nhất lên <strong>remote repository</strong> dùng lệnh sau</li>
 </ul>
 <pre><code>    git push origin master                 
