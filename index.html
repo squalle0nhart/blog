@@ -266,26 +266,27 @@
 </li>
 <li><p>Để checkout một repo</p>
 <ul>
-<li><p>Đối với Repo nội bộ: </p>
+<li>Đối với Repo nội bộ: </li>
+</ul>
+</li>
+</ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone /path/to/repository</div></pre></td></tr></table></figure>
 <ul>
-<li><p>Đối với Remote repo:  </p>
+<li>Đối với Remote repo:  </li>
+</ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">                       git clone username@host:/path/to/repository</div><div class="line">```        </div><div class="line">                        </div><div class="line">### Git Workflow </div><div class="line"></div><div class="line">&#123;% asset_img workflow.png Hexo %&#125;</div><div class="line"></div><div class="line">Một repo của git bao gồm 3 khu vực chính: </div><div class="line">* **Thư mục đang làm việc (Working directory)**: Thư mục này lưu trữ các file mã nguồn của bạn.</div><div class="line">*  **Index (hay Stagging Area)**: Chứa thông tin các file chuẩn bị được commit </div><div class="line">*  **Repository**: Kho chứa mã nguồn, nơi lưu lại tất cả các phiên bản mã nguồn của bạn</div><div class="line">	</div><div class="line">Thông thường git sẽ hoạt động theo luồng như sau: </div><div class="line">1. Bạn sửa file trong thư mục đang làm việc (working directory)</div><div class="line">2. Git sẽ tạo 1 bản snapshot file này và đưa vào mục các file theo dõi (Staging Area) </div><div class="line">3. Bạn thực hiện commit, git sẽ lấy các file trong mục theo dõi và lưu các snapshot của file nó vào thư mục git của bạn</div><div class="line">		</div><div class="line">### Lệnh add và commit :</div><div class="line">1. Bạn có thể thêm các file vào mục staging area bằng lệnh add :</div></pre></td></tr></table></figure>
-<pre><code>git add &lt;filename&gt;
-</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">   hoặc</div><div class="line">	```							</div><div class="line">                        git add </div><div class="line">    ```                            </div><div class="line">   để thêm 1 file cụ thể hoặc tất cả vào mục staging area</div><div class="line">   </div><div class="line">2. Lưu các thay đổi vào local repo của bạn</div></pre></td></tr></table></figure>
-<pre><code>git commit -m &quot;Commit message&quot;
-</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">### Đẩy thay đổi của bạn lên remote repository</div><div class="line">* Sau khi bạn đã commit xong thay đổi của bạn. Lúc này các thay đổi của bạn được ở mục **HEAD** (dễ hiểu hơn là phiên bản mới nhất). Bây giờ để đẩy các thay đổi mới nhất lên **remote repository** dùng lệnh sau</div></pre></td></tr></table></figure>
-<pre><code>git push origin master                 
-</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">    trong đó **master** là nhánh bạn muốn đẩy lên.</div><div class="line"></div><div class="line">* Nếu **local repository** của bạn chưa được kết nối với remote server thì dùng lệnh:</div></pre></td></tr></table></figure>
-<pre><code>git remote add origin &lt;server&gt;
-</code></pre><p>```</p>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="Nhanh-Branch"><a href="#Nhanh-Branch" class="headerlink" title="Nhánh (Branch)"></a>Nhánh (Branch)</h3><p>Trong git <strong>Branch</strong> được dùng để tách biệt môi trường làm việc cho developer. </p>
+<pre><code>                   git add &lt;filename&gt;
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">	</div><div class="line">   hoặc</div><div class="line">   </div><div class="line">	```							</div><div class="line">                        git add </div><div class="line">    ```                            </div><div class="line">	</div><div class="line">   để thêm 1 file cụ thể hoặc tất cả vào mục staging area</div><div class="line">   </div><div class="line">2. Lưu các thay đổi vào local repo của bạn</div></pre></td></tr></table></figure>
+
+                    git commit -m &quot;Commit message&quot;
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">	</div><div class="line">### Đẩy thay đổi của bạn lên remote repository</div><div class="line">* Sau khi bạn đã commit xong thay đổi của bạn. Lúc này các thay đổi của bạn được ở mục **HEAD** (dễ hiểu hơn là phiên bản mới nhất). Bây giờ để đẩy các thay đổi mới nhất lên **remote repository** dùng lệnh sau</div></pre></td></tr></table></figure>
+
+                    git push origin master                 
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">	</div><div class="line">    trong đó **master** là nhánh bạn muốn đẩy lên.</div><div class="line"></div><div class="line">* Nếu **local repository** của bạn chưa được kết nối với remote server thì dùng lệnh:</div></pre></td></tr></table></figure>
+
+                    git remote add origin &lt;server&gt;
+```
+</code></pre><h3 id="Nhanh-Branch"><a href="#Nhanh-Branch" class="headerlink" title="Nhánh (Branch)"></a>Nhánh (Branch)</h3><p>Trong git <strong>Branch</strong> được dùng để tách biệt môi trường làm việc cho developer. </p>
 <img src="/2017/04/26/git-basic/branch.png" alt="Hexo" title="Hexo">
 <p>Ví dụ: <strong>Bạn muốn tạo ra một phiên bản thử nghiệm với môi trường code hiện tại nhưng lại không muốn nó ảnh hưởng tới các file code hiện tại, việc này có thể thực hiện bằng cách clone lại chính repository bạn đang dùng hoặc copy ra một chỗ khác nhưng 2 cách trên đều rất mất công và khó khăn cho việc đồng bộ hóa code</strong>. </p>
 <p>Để xử lý vấn đề trên <strong>Git</strong> cung cấp cho ta cơ chế phân nhánh. Nhánh ban đầu khi bạn tạo repository là nhánh <strong>master</strong>, nhánh này dùng để chứa các code chính trong project</p>
