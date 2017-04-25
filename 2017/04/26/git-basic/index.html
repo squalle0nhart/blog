@@ -24,7 +24,7 @@
 <meta property="og:image" content="https://squalle0nhart.github.io/2017/04/26/git-basic/workflow.png">
 <meta property="og:image" content="https://squalle0nhart.github.io/2017/04/26/git-basic/branch.png">
 <meta property="og:image" content="https://squalle0nhart.github.io/2017/04/26/git-basic/pull.png">
-<meta property="og:updated_time" content="2017-04-25T17:50:52.684Z">
+<meta property="og:updated_time" content="2017-04-25T17:55:15.208Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git-Cơ bản về Git">
 <meta name="twitter:description" content="Git là gì ? Git là một “Hệ thống quản lý phiên bản phân tán“. Nói đơn giản nó giúp bạn lưu lại phiên bản của các lần thay đổi mã nguồn và có thể dễ dàng tìm lại mà không cần phải copy mã nguồn và lưu">
@@ -277,16 +277,16 @@
 </code></pre></li>
 <li><p>Để checkout một repo</p>
 <ul>
-<li>Đối với Repo nội bộ: </li>
+<li><p>Đối với Repo nội bộ: </p>
+<pre><code>git clone /path/to/repository
+</code></pre></li>
+<li><p>Đối với Remote repo:  </p>
+<pre><code>git clone username@host:/path/to/repository       
+</code></pre><h3 id="Git-Workflow"><a href="#Git-Workflow" class="headerlink" title="Git Workflow"></a>Git Workflow</h3></li>
 </ul>
 </li>
 </ul>
-<pre><code>git clone /path/to/repository
-</code></pre><ul>
-<li>Đối với Remote repo:  </li>
-</ul>
-<pre><code>git clone username@host:/path/to/repository
-</code></pre><h3 id="Git-Workflow"><a href="#Git-Workflow" class="headerlink" title="Git Workflow"></a>Git Workflow</h3><img src="/2017/04/26/git-basic/workflow.png" alt="Hexo" title="Hexo">
+<img src="/2017/04/26/git-basic/workflow.png" alt="Hexo" title="Hexo">
 <p>Một repo của git bao gồm 3 khu vực chính: </p>
 <ul>
 <li><strong>Thư mục đang làm việc (Working directory)</strong>: Thư mục này lưu trữ các file mã nguồn của bạn.</li>
@@ -314,7 +314,6 @@
 <li>Sau khi bạn đã commit xong thay đổi của bạn. Lúc này các thay đổi của bạn được ở mục <strong>HEAD</strong> (dễ hiểu hơn là phiên bản mới nhất). Bây giờ để đẩy các thay đổi mới nhất lên <strong>remote repository</strong> dùng lệnh sau</li>
 </ul>
 <pre><code>    git push origin master                 
-
 
 trong đó **master** là nhánh bạn muốn đẩy lên.
 </code></pre><ul>
