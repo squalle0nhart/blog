@@ -6,29 +6,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Squalle0nhart Blog">
-    <title>Git-Cơ bản về Git - Squalle0nhart Blog</title>
+    <title>Sống để làm gì ? - Squalle0nhart Blog</title>
     <meta name="author" content="Mây và Bão">
     
-        <meta name="keywords" content="git,developer">
+        <meta name="keywords" content="life,living">
     
     
     
-    <meta name="description" content="Đây là bài mình tổng hợp một số kiến thức cơ bản về Git, giúp bạn có thể hình dung được cách hoạt động git và sử dụng được một số tính năng cơ bản. Happy Time! I. Git là gì ? Git là một “Hệ thống q">
-<meta name="keywords" content="git,developer">
+    <meta name="description" content=". . . Chúng ta học ngành này ngành kia theo sự thúc ép bố mẹ và những người xung quanh chỉ vì nó danh giá và nhiều tiền, mà chưa hề cân nhắc đến nhu cầu ngành nghề của chính bản thân mình. Chúng ta đ">
+<meta name="keywords" content="xàm quần,life">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="Git-Cơ bản về Git">
-<meta property="og:url" content="https://squalle0nhart.github.io/2017/04/26/git-basic/index.html">
+<meta property="og:title" content="Sống để làm gì ?">
+<meta property="og:url" content="https://squalle0nhart.github.io/2017/05/10/song-de-lam-gi/index.html">
 <meta property="og:site_name" content="Squalle0nhart Blog">
-<meta property="og:description" content="Đây là bài mình tổng hợp một số kiến thức cơ bản về Git, giúp bạn có thể hình dung được cách hoạt động git và sử dụng được một số tính năng cơ bản. Happy Time! I. Git là gì ? Git là một “Hệ thống q">
-<meta property="og:image" content="https://squalle0nhart.github.io/2017/04/26/git-basic/logo.png">
-<meta property="og:image" content="https://squalle0nhart.github.io/2017/04/26/git-basic/workflow.png">
-<meta property="og:image" content="https://squalle0nhart.github.io/2017/04/26/git-basic/branch.png">
-<meta property="og:image" content="https://squalle0nhart.github.io/2017/04/26/git-basic/pull.png">
-<meta property="og:updated_time" content="2017-04-25T18:06:59.857Z">
+<meta property="og:description" content=". . . Chúng ta học ngành này ngành kia theo sự thúc ép bố mẹ và những người xung quanh chỉ vì nó danh giá và nhiều tiền, mà chưa hề cân nhắc đến nhu cầu ngành nghề của chính bản thân mình. Chúng ta đ">
+<meta property="og:image" content="https://squalle0nhart.github.io/2017/05/10/song-de-lam-gi/life.png">
+<meta property="og:updated_time" content="2017-05-10T13:12:03.942Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Git-Cơ bản về Git">
-<meta name="twitter:description" content="Đây là bài mình tổng hợp một số kiến thức cơ bản về Git, giúp bạn có thể hình dung được cách hoạt động git và sử dụng được một số tính năng cơ bản. Happy Time! I. Git là gì ? Git là một “Hệ thống q">
-<meta name="twitter:image" content="https://squalle0nhart.github.io/2017/04/26/git-basic/logo.png">
+<meta name="twitter:title" content="Sống để làm gì ?">
+<meta name="twitter:description" content=". . . Chúng ta học ngành này ngành kia theo sự thúc ép bố mẹ và những người xung quanh chỉ vì nó danh giá và nhiều tiền, mà chưa hề cân nhắc đến nhu cầu ngành nghề của chính bản thân mình. Chúng ta đ">
+<meta name="twitter:image" content="https://squalle0nhart.github.io/2017/05/10/song-de-lam-gi/life.png">
 <meta property="fb:app_id" content="100001822658424">
     
     
@@ -241,20 +238,20 @@
         <div class="post-header main-content-wrap text-left">
     
         <h1 class="post-title" itemprop="headline">
-            Git-Cơ bản về Git
+            Sống để làm gì ?
         </h1>
     
     
         <div class="post-meta">
-    <time itemprop="datePublished" datetime="2017-04-26T00:34:09+07:00">
+    <time itemprop="datePublished" datetime="2017-05-10T20:34:09+07:00">
 	
-		    Th04 26, 2017
+		    Th05 10, 2017
     	
     </time>
     
         <span>trong </span>
         
-    <a class="category-link" href="/categories/developer/">developer</a>
+    <a class="category-link" href="/categories/life/">life</a>, <a class="category-link" href="/categories/life/cuoc-song/">cuộc sống</a>
 
 
     
@@ -265,97 +262,27 @@
     
     <div class="post-content markdown" itemprop="articleBody">
         <div class="main-content-wrap">
-            <img src="/2017/04/26/git-basic/logo.png" alt="Hexo" title="Hexo">
-<p>  Đây là bài mình tổng hợp một số kiến thức cơ bản về Git, giúp bạn có thể hình dung được cách hoạt động git và sử dụng được một số tính năng cơ bản. Happy Time!</p>
-<h3 id="I-Git-la-gi"><a href="#I-Git-la-gi" class="headerlink" title="I. Git là gì ?"></a>I. Git là gì ?</h3><p> <strong>Git</strong> là một “<strong>Hệ thống quản lý phiên bản phân tán</strong>“. Nói đơn giản nó giúp bạn lưu lại phiên bản của các lần thay đổi mã nguồn và có thể dễ dàng tìm lại mà<br> không cần phải copy mã nguồn và lưu ở đâu đó. Một người khác cũng có thể xem các thay đổi này của bạn ở từng phiên bản, họ có thể đối chiếu sự thay đổi theo từng phiên bản của<br> bạn và gộp vào phiên bản của họ. Cuối cùng tất cả các phiên bản đều được đưa lên một kho chứa mã nguồn. </p>
-<p>Chú ý : <strong>Git</strong> là một mô hình hệ thống. <strong>Github</strong>,<strong>Gitlab</strong>,… chỉ là một máy chủ dịch vụ xây dựng theo mô hình git giúp cho người dùng có thể tạo tài khoản và tự quản lý các kho chứa mã nguồn riêng của mình </p>
-<h3 id="II-Cai-dat"><a href="#II-Cai-dat" class="headerlink" title="II. Cài đặt:"></a>II. Cài đặt:</h3><p>  Mac: <a href="https://git-scm.com/download/mac" target="_blank" rel="external">https://git-scm.com/download/mac</a></p>
-<p>  Windows: <a href="https://git-for-windows.github.io/" target="_blank" rel="external">https://git-for-windows.github.io/</a></p>
-<p>  Linux: <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank" rel="external">https://git-scm.com/book/en/v2/Getting-Started-Installing-Git</a></p>
-<h3 id="III-Tao-va-checkout-mot-repository"><a href="#III-Tao-va-checkout-mot-repository" class="headerlink" title="III. Tạo và checkout một repository"></a>III. Tạo và checkout một repository</h3><ul>
-<li><p>Để tạo một repositort mới tạo một thư mục mới, mở nó lên và dùng lệnh: </p>
-<pre><code>git init. 
-</code></pre></li>
-<li><p>Để checkout một repo:</p>
-<ol>
-<li><p>Đối với Repo nội bộ: </p>
-<pre><code>git clone /path/to/repository
-</code></pre></li>
-<li><p>Đối với Remote repo:  </p>
-<pre><code>git clone username@host:/path/to/repository      
-</code></pre></li>
-</ol>
-</li>
-</ul>
-<h3 id="IV-Git-Workflow"><a href="#IV-Git-Workflow" class="headerlink" title="IV. Git Workflow"></a>IV. Git Workflow</h3><img src="/2017/04/26/git-basic/workflow.png" alt="Hexo" title="Hexo">
-<p>Một repo của git bao gồm 3 khu vực chính: </p>
-<ul>
-<li><strong>Thư mục đang làm việc (Working directory)</strong>: Thư mục này lưu trữ các file mã nguồn của bạn.</li>
-<li><strong>Index (hay Stagging Area)</strong>: Chứa thông tin các file chuẩn bị được commit </li>
-<li><strong>Repository</strong>: Kho chứa mã nguồn, nơi lưu lại tất cả các phiên bản mã nguồn của bạn</li>
-</ul>
-<p>Thông thường git sẽ hoạt động theo luồng như sau: </p>
-<ol>
-<li>Bạn sửa file trong thư mục đang làm việc (working directory)</li>
-<li>Git sẽ tạo 1 bản snapshot file này và đưa vào mục các file theo dõi (Staging Area) </li>
-<li>Bạn thực hiện commit, git sẽ lấy các file trong mục theo dõi và lưu các snapshot của file nó vào thư mục git của bạn</li>
-</ol>
-<h3 id="V-Lenh-add-va-commit"><a href="#V-Lenh-add-va-commit" class="headerlink" title="V. Lệnh add và commit :"></a>V. Lệnh add và commit :</h3><ul>
-<li><p>Bạn có thể thêm các file vào mục staging area bằng lệnh add :</p>
-<pre><code>git add &lt;filename&gt;
-</code></pre><p> hoặc</p>
-<pre><code>git add 
-</code></pre><p> để thêm 1 file cụ thể hoặc tất cả vào mục staging area.</p>
-</li>
-<li><p>Lưu các thay đổi vào local repo của bạn </p>
-<pre><code>git commit -m &quot;Commit message&quot;
-</code></pre></li>
-</ul>
-<h3 id="VI-Day-thay-doi-cua-ban-len-remote-repository"><a href="#VI-Day-thay-doi-cua-ban-len-remote-repository" class="headerlink" title="VI. Đẩy thay đổi của bạn lên remote repository"></a>VI. Đẩy thay đổi của bạn lên remote repository</h3><ul>
-<li>Sau khi bạn đã commit xong thay đổi của bạn. Lúc này các thay đổi của bạn được ở mục <strong>HEAD</strong> (dễ hiểu hơn là phiên bản mới nhất). Bây giờ để đẩy các thay đổi mới nhất lên <strong>remote repository</strong> dùng lệnh sau</li>
-</ul>
-<pre><code>    git push origin master                 
-
-trong đó **master** là nhánh bạn muốn đẩy lên.
-</code></pre><ul>
-<li>Nếu <strong>local repository</strong> của bạn chưa được kết nối với remote server thì dùng lệnh: </li>
-</ul>
-<pre><code>git remote add origin &lt;server&gt;
-</code></pre><h3 id="VII-Nhanh-Branch"><a href="#VII-Nhanh-Branch" class="headerlink" title="VII. Nhánh (Branch)"></a>VII. Nhánh (Branch)</h3><p>Trong git <strong>Branch</strong> được dùng để tách biệt môi trường làm việc cho developer. </p>
-<img src="/2017/04/26/git-basic/branch.png" alt="Hexo" title="Hexo">
-<p>Ví dụ: <strong>Bạn muốn tạo ra một phiên bản thử nghiệm với môi trường code hiện tại nhưng lại không muốn nó ảnh hưởng tới các file code hiện tại, việc này có thể thực hiện bằng cách clone lại chính repository bạn đang dùng hoặc copy ra một chỗ khác nhưng 2 cách trên đều rất mất công và khó khăn cho việc đồng bộ hóa code</strong>. </p>
-<p>Để xử lý vấn đề trên <strong>Git</strong> cung cấp cho ta cơ chế phân nhánh. Nhánh ban đầu khi bạn tạo repository là nhánh <strong>master</strong>, nhánh này dùng để chứa các code chính trong project</p>
-<ul>
-<li><p>Tạo một nhánh: quay lại ví dụ lúc nãy để tạo một bản thử nghiệm bạn muốn mà không làm ảnh hưởng tới các file code hiện tại bạn cần tạo một nhánh mới gọi là <strong>develop</strong> bằng lệnh:</p>
-<pre><code>git checkout -b develop
-</code></pre><p>  lúc này toàn bộ mã nguồn từ nhánh master sẽ được copy sang nhánh <strong>develop</strong>, <strong>mọi thay đổi</strong> trên nhánh <strong>develop</strong> sẽ không ảnh hưởng tới nhánh <strong>master</strong> và ngược lại.</p>
-</li>
-<li><p>Chuyển nhánh: Để chuyển nhánh ta dùng lệnh</p>
-<pre><code>git checkout &lt;tên nhánh&gt;
-</code></pre></li>
-<li><p>Xóa nhánh: Để xóa một nhánh dùng lệnh sau </p>
-<pre><code>git branch -d &lt;tên nhánh&gt;
-</code></pre></li>
-<li><p>Cập nhật lên remote repository: Để người khác thấy được nhánh của bạn thì phải push nhánh đó lên remote repository bằng lệnh sau</p>
-<pre><code>git push origin &lt;tên nhánh&gt;
-</code></pre></li>
-</ul>
-<h3 id="VIII-Cap-nhat-va-tich-hop-update-and-merge"><a href="#VIII-Cap-nhat-va-tich-hop-update-and-merge" class="headerlink" title="VIII. Cập nhật và tích hợp (update and merge)"></a>VIII. Cập nhật và tích hợp (update and merge)</h3><img src="/2017/04/26/git-basic/pull.png" alt="Hexo" title="Hexo">
-<ul>
-<li><p><strong>Pull</strong>: Để cập nhật local repository của bạn với lần commit mới nhất trên remote repository dùng lệnh:</p>
-<pre><code>git pull
-</code></pre><p>  lệnh này sẽ tự động lấy code mới trên remote về(fetch) và tiến hành trộn(merge_ với local repository của bạn </p>
-</li>
-<li><p>Trộn nhánh: Để trộn một nhánh bất kỳ vào nhánh bạn đang sử dụng dùng lệnh sau</p>
-<pre><code>git merge &lt;tên nhánh&gt;
-</code></pre><p><strong>Chú ý:</strong> Trong cả 2 trường hợp trên Git sẽ cố gắng tự merge code của bạn. Tuy nhiên đôi khi sẽ có xung đột(conflict) mà Git không thể trộn code được. Lúc này bạn phải xử lý các xung đột thủ công bằng cách chỉnh sửa các tập tin được thông báo.</p>
-</li>
-</ul>
-<h3 id="IX-Nhan-Tag"><a href="#IX-Nhan-Tag" class="headerlink" title="IX. Nhãn (Tag)"></a>IX. Nhãn (Tag)</h3><p>Mỗi khi phát hành một phiên bản của phần mềm ta nên tạo nhãn (tag) cho phiên bản đó. Để tạo 1 tag mới ta dùng lệnh sau:</p>
-<pre><code>git tag &lt;tên phiên bản&gt;  &lt;checksum&gt;
-</code></pre><ul>
-<li><strong><checksum></checksum></strong> ở đây thường là mã commit của bạn hoặc 1 đoạn trong mã commit.</li>
-</ul>
+            <img src="/2017/05/10/song-de-lam-gi/life.png" alt="Hexo" title="Hexo">
+<p>. . . Chúng ta học ngành này ngành kia theo sự thúc ép bố mẹ và những người xung quanh chỉ vì nó danh giá và nhiều tiền, mà chưa hề cân nhắc đến nhu cầu ngành nghề của chính bản thân mình.</p>
+<p>Chúng ta đi chơi với bạn bè chỉ đơn giản là vì người ta rủ rê đi ngay và liền, mà chưa suy nghĩ xem mình muốn đạt được cái gì trong những mối quan hệ và muốn bạn bè mình biết điều gì.</p>
+<p>Chúng ta lướt Internet hằng ngày chỉ đơn giản vì đó là một thói quen, mà chưa suy nghĩ hay để ý xem mình hay lên đó đọc cái gì nhất, để từ đó chọn lọc cái mà mình muốn xem.</p>
+<p>Đời người cứ thế trôi ỡm ờ, lãng đãng như những chiếc lá lục bình hờ hững trôi trên sông. Trôi hoài trôi mãi mà chẳng biết trôi về đâu, chỉ biết để sông cuốn đi đâu thì cuốn…</p>
+<p>Quá lâu rồi mới có dịp dừng chân tại một quán cà phê ven đường, vừa nhâm nhi cappuccino vừa ngắm nhìn dòng xe cộ lướt qua lướt lại như điện xẹt. Nói nghe có phần văn vẻ màu mè, chứ thật ra là đã có một cuộc hẹn tùy hứng với một người bạn từ trước đó. Chỉ là mãi chưa thấy bạn tới, cộng thêm bản tính ngồi không quá nhiều sẽ đâm ra làm nhiều chuyện nông nỗi, nên mới vừa nhâm nhi cà phê vừa viết mấy dòng linh tinh này để giết thời gian. Thỉnh thoảng không kìm được, vừa gõ lách cách vừa ngẩng lên ngước nhìn dòng xe cộ lướt qua lướt lại nhanh như điện xẹt.</p>
+<p>Chỉ trong vòng vài phút, đã có thể chứng kiến cuộc sống hiện đại trước mắt xoay chuyển với một thứ tốc độ kinh khủng không kém gì dòng xe cộ đang hối hả ngoài kia!</p>
+<p>Học sinh đi học từ sáng sớm cho đến chiều tối, về nhà chỉ kịp ăn cơm tắm rửa chút đỉnh rồi lại tiếp tục lao vào cuộc chiến sinh tử với con quái vật học hành, xong xuôi rồi mới đánh răng đi ngủ để dành sức cho một ngày học hành vất vả khác đang dí sát đít.</p>
+<p>Những nhân viên công sở, đa phần họ cũng phải dậy sớm sửa sang các kiểu để đi làm. Có ngày thì làm đúng tám tiếng đồng hồ theo quy định. Có ngày thỉnh thoảng phải ở lại làm ca đêm đến tối mịt mới về. Về nhà chỉ kịp ăn uống tắm rửa, ở nhà giải trí lướt web được chút xíu rồi đi ngủ để sáng mai còn đi làm tiếp. Thậm chí đã ngồi ở nhà rồi cũng khó tránh khỏi việc bị sếp réo bất thình lình giữa đêm khuya.</p>
+<p>Chúng ta cứ thế bị cuốn theo vòng xoáy cuồn cuộn của sự bận rộn, chìm nghỉm trong khối lượng khổng lồ công việc phải làm hằng ngày. Về được tới nhà cũng đã sức cùng lực kiệt, chẳng thiết tha làm cái gì khác ngoài việc nghỉ ngơi hồi sức. Mọi thứ cứ thế lặp đi lặp lại. Ngày qua tháng lại. Như những vòng tròn lẩn quẩn không có điểm dừng…</p>
+<hr>
+<p>Bản thân thường có một thói quen là hay dành thời gian cho chính mình ít nhất là khoảng một tiếng, khi chỉ còn một mình vào lúc đêm khuya. Nghe có vẻ rất chi là ngớ ngẩn, nhưng khi nói chuyện với chính mình, đó chính là lúc bắt đầu tìm hiểu chính mình nhiều hơn sau một ngày mệt mỏi cuốn theo luồng xoáy học hành và công việc. Nghĩ về những điều mình đã và đang làm, những điều mình mong muốn, nhận thức được mình đang sống và nhìn thấy những thử thách chông gai đang chờ trước mắt. Dần dần nó đã trở thành một thói quen khó bỏ, dù cho có bận rộn bù đầu học hành và dạy thêm các kiểu đi chăng nữa.</p>
+<p>Giống như khi chúng ta chạy xe ngoài đường vậy. Dù xe của bạn có động cơ hàng trăm đơn vị mã lực và tốc độ lên tới mấy trăm cây một giờ đi chăng nữa, xăng dầu trong xe vẫn là một thứ hữu hạn. Sớm hay muộn gì rồi cũng sẽ tới một lúc xe hết xăng, phải dừng lại tiếp thêm nhiên liệu rồi mới cho xe chạy tiếp được.</p>
+<p>Có một sự thật là đa phần chúng ta thường không thể dừng lại – dù chỉ một chút, giữa cuộc sống bận rộn này mà không suy nghĩ xem tại sao mình lại có mặt ở đây và làm những công việc này. Chúng ta cứ thế cuốn đi theo những khối lượng công việc khác nhau, hết ngày này qua ngày khác mà không thể dừng lại để suy nghĩ xem những điều bản thân muốn đạt được là gì. Cứ thế mà cuốn theo vòng xoay cuộc đời một cách hờ hững.</p>
+<p>Chúng ta học ngành này ngành kia theo sự thúc ép bố mẹ và những người xung quanh chỉ vì nó danh giá và nhiều tiền, mà chưa hề cân nhắc đến nhu cầu ngành nghề của chính bản thân mình.</p>
+<p>Chúng ta đi chơi với bạn bè chỉ đơn giản là vì người ta rủ rê đi ngay và liền, mà chưa suy nghĩ xem mình muốn đạt được cái gì trong những mối quan hệ và muốn bạn bè mình biết điều gì.</p>
+<p>Chúng ta lướt Internet hằng ngày chỉ đơn giản vì đó là một thói quen, mà chưa suy nghĩ hay để ý xem mình hay lên đó đọc cái gì nhất, để từ đó chọn lọc cái mà mình muốn xem.</p>
+<p>Đời người cứ thế trôi ỡm ờ, lãng đãng như những chiếc lá lục bình hờ hững trôi trên sông. Trôi hoài trôi mãi mà chẳng biết trôi về đâu, chỉ biết để sông cuốn đi đâu thì cuốn…</p>
+<p>Cách đây không lâu có tình cờ đọc được câu này trên một diễn đàn mạng nọ: “Mục đích bạn xuống Trái Đất để làm gì?” Nó cũng đã từng là một trào lưu rất nổi, đi đâu cũng thấy cư dân mạng lấy câu này ra trêu nhau cả tháng trời. Ban đầu bản thân cũng chỉ mới hiểu câu này theo ý nghĩa trêu ghẹo nhau cho vui, nhưng sau này ngẫm lại thấy nó cũng mang một ý nghĩa nghiêm túc nhất định – rằng mình muốn có những người bạn như thế nào, mình sẽ làm nghề gì, muốn ăn ngon mặc đẹp hay chỉ cần đủ ăn đủ mặc đã là hạnh phúc, gia đình mình sau này sẽ như thế nào,… và nhiều điều khác trong đời nữa.</p>
+<p>Dù bạn đã từng suy nghĩ về câu trả lời hay chưa, ngay từ bây giờ hãy tự hỏi mình câu hỏi này thường xuyên. Có bận rộn học hành làm việc tới đâu đi nữa, mỗi ngày hãy chịu khó dừng lại, nghĩ về nó một chút. Mục đích đó nên là của riêng bản thân bạn, và cũng không nhất thiết là phải quá cầu kỳ chi li từng tí một. Chỉ cần nó có thể giúp bạn trở thành con người tốt nhất mà bạn có thể, và nên bắt đầu càng sớm càng tốt. Vì câu hỏi này không phải ngày một ngày hai mà có thể trả lời ngay, thậm chí nó có thể sẽ tiêu tốn cả một quãng đời. Mỗi con người lại có những mục tiêu khác nhau, không ai giống ai cả, và cũng không ai có thể tìm kiếm đáp án giùm cho bạn được. Chỉ chắc chắn là khi cái gì đó bên trong lồng ngực trái của bạn còn đập thình thịch, chắc chắn phải có một lý do nhất định nào đó để bạn còn sống được tới bây giờ. Đời vốn dĩ rất hiếm khi có cái gì gọi là ngẫu nhiên.</p>
+<p><strong>THĐP</strong></p>
 
             
         </div>
@@ -365,7 +292,7 @@ trong đó **master** là nhánh bạn muốn đẩy lên.
             <div class="post-footer-tags">
                 <span class="text-color-light text-small">TAGGED IN</span><br/>
                 
-    <a class="tag tag--primary tag--small t-link" href="/tags/developer/">developer</a> <a class="tag tag--primary tag--small t-link" href="/tags/git/">git</a>
+    <a class="tag tag--primary tag--small t-link" href="/tags/life/">life</a> <a class="tag tag--primary tag--small t-link" href="/tags/xam-quan/">xàm quần</a>
 
             </div>
         
@@ -375,7 +302,7 @@ trong đó **master** là nhánh bạn muốn đẩy lên.
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/04/18/guide-create-hexo-blog/"  data-tooltip="Hướng dẫn tạo Blog đơn giản với Hexo và Nodejs">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/05/09/secret-of-the-gifted/"  data-tooltip="The Secret of the Gifted">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">QUAY LẠI</span>
@@ -383,7 +310,7 @@ trong đó **master** là nhánh bạn muốn đẩy lên.
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/05/09/secret-of-the-gifted/" data-tooltip="The Secret of the Gifted">
+                    <a class="post-action-btn btn btn--disabled">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">TIẾP</span>
                     <i class="fa fa-angle-right"></i>
@@ -401,7 +328,7 @@ trong đó **master** là nhánh bạn muốn đẩy lên.
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://squalle0nhart.github.io/2017/04/26/git-basic/">
+                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://squalle0nhart.github.io/2017/05/10/song-de-lam-gi/">
                     <i class="fa fa-facebook-official"></i>
                 </a>
             </li>
@@ -409,7 +336,7 @@ trong đó **master** là nhánh bạn muốn đẩy lên.
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://squalle0nhart.github.io/2017/04/26/git-basic/">
+                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://squalle0nhart.github.io/2017/05/10/song-de-lam-gi/">
                     <i class="fa fa-twitter"></i>
                 </a>
             </li>
@@ -417,7 +344,7 @@ trong đó **master** là nhánh bạn muốn đẩy lên.
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://squalle0nhart.github.io/2017/04/26/git-basic/">
+                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://squalle0nhart.github.io/2017/05/10/song-de-lam-gi/">
                     <i class="fa fa-google-plus"></i>
                 </a>
             </li>
@@ -467,7 +394,7 @@ trong đó **master** là nhánh bạn muốn đẩy lên.
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/04/18/guide-create-hexo-blog/"  data-tooltip="Hướng dẫn tạo Blog đơn giản với Hexo và Nodejs">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/05/09/secret-of-the-gifted/"  data-tooltip="The Secret of the Gifted">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">QUAY LẠI</span>
@@ -475,7 +402,7 @@ trong đó **master** là nhánh bạn muốn đẩy lên.
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/05/09/secret-of-the-gifted/" data-tooltip="The Secret of the Gifted">
+                    <a class="post-action-btn btn btn--disabled">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">TIẾP</span>
                     <i class="fa fa-angle-right"></i>
@@ -493,7 +420,7 @@ trong đó **master** là nhánh bạn muốn đẩy lên.
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://squalle0nhart.github.io/2017/04/26/git-basic/">
+                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://squalle0nhart.github.io/2017/05/10/song-de-lam-gi/">
                     <i class="fa fa-facebook-official"></i>
                 </a>
             </li>
@@ -501,7 +428,7 @@ trong đó **master** là nhánh bạn muốn đẩy lên.
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://squalle0nhart.github.io/2017/04/26/git-basic/">
+                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://squalle0nhart.github.io/2017/05/10/song-de-lam-gi/">
                     <i class="fa fa-twitter"></i>
                 </a>
             </li>
@@ -509,7 +436,7 @@ trong đó **master** là nhánh bạn muốn đẩy lên.
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://squalle0nhart.github.io/2017/04/26/git-basic/">
+                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://squalle0nhart.github.io/2017/05/10/song-de-lam-gi/">
                     <i class="fa fa-google-plus"></i>
                 </a>
             </li>
@@ -540,7 +467,7 @@ trong đó **master** là nhánh bạn muốn đẩy lên.
             
             
             <li class="share-option">
-                <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://squalle0nhart.github.io/2017/04/26/git-basic/">
+                <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://squalle0nhart.github.io/2017/05/10/song-de-lam-gi/">
                     <i class="fa fa-facebook-official"></i><span>Chia sẻ lên Facebook</span>
                 </a>
             </li>
@@ -548,7 +475,7 @@ trong đó **master** là nhánh bạn muốn đẩy lên.
             
             
             <li class="share-option">
-                <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https://squalle0nhart.github.io/2017/04/26/git-basic/">
+                <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https://squalle0nhart.github.io/2017/05/10/song-de-lam-gi/">
                     <i class="fa fa-twitter"></i><span>Chia sẻ lên Twitter</span>
                 </a>
             </li>
@@ -556,7 +483,7 @@ trong đó **master** là nhánh bạn muốn đẩy lên.
             
             
             <li class="share-option">
-                <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https://squalle0nhart.github.io/2017/04/26/git-basic/">
+                <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https://squalle0nhart.github.io/2017/05/10/song-de-lam-gi/">
                     <i class="fa fa-google-plus"></i><span>Chia sẻ lên Google+</span>
                 </a>
             </li>
@@ -721,9 +648,9 @@ trong đó **master** là nhánh bạn muốn đẩy lên.
     
         <script>
              var disqus_config = function () {
-                 this.page.url = 'https://squalle0nhart.github.io/2017/04/26/git-basic/';
+                 this.page.url = 'https://squalle0nhart.github.io/2017/05/10/song-de-lam-gi/';
                  
-                    this.page.identifier = '2017/04/26/git-basic/';
+                    this.page.identifier = '2017/05/10/song-de-lam-gi/';
                  
              };
             (function() {

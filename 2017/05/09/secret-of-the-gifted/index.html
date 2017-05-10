@@ -6,29 +6,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Squalle0nhart Blog">
-    <title>Git-Cơ bản về Git - Squalle0nhart Blog</title>
+    <title>The Secret of the Gifted - Squalle0nhart Blog</title>
     <meta name="author" content="Mây và Bão">
     
-        <meta name="keywords" content="git,developer">
+        <meta name="keywords" content="life,gifted">
     
     
     
-    <meta name="description" content="Đây là bài mình tổng hợp một số kiến thức cơ bản về Git, giúp bạn có thể hình dung được cách hoạt động git và sử dụng được một số tính năng cơ bản. Happy Time! I. Git là gì ? Git là một “Hệ thống q">
-<meta name="keywords" content="git,developer">
+    <meta name="description" content="You might be wondering whether work is really for you. You might have noticed that skilled people seem to have a special gift for the work. It comes easily and naturally to them, and though you love">
+<meta name="keywords" content="xàm quần,life">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="Git-Cơ bản về Git">
-<meta property="og:url" content="https://squalle0nhart.github.io/2017/04/26/git-basic/index.html">
+<meta property="og:title" content="The Secret of the Gifted">
+<meta property="og:url" content="https://squalle0nhart.github.io/2017/05/09/secret-of-the-gifted/index.html">
 <meta property="og:site_name" content="Squalle0nhart Blog">
-<meta property="og:description" content="Đây là bài mình tổng hợp một số kiến thức cơ bản về Git, giúp bạn có thể hình dung được cách hoạt động git và sử dụng được một số tính năng cơ bản. Happy Time! I. Git là gì ? Git là một “Hệ thống q">
-<meta property="og:image" content="https://squalle0nhart.github.io/2017/04/26/git-basic/logo.png">
-<meta property="og:image" content="https://squalle0nhart.github.io/2017/04/26/git-basic/workflow.png">
-<meta property="og:image" content="https://squalle0nhart.github.io/2017/04/26/git-basic/branch.png">
-<meta property="og:image" content="https://squalle0nhart.github.io/2017/04/26/git-basic/pull.png">
-<meta property="og:updated_time" content="2017-04-25T18:06:59.857Z">
+<meta property="og:description" content="You might be wondering whether work is really for you. You might have noticed that skilled people seem to have a special gift for the work. It comes easily and naturally to them, and though you love">
+<meta property="og:image" content="https://squalle0nhart.github.io/2017/05/09/secret-of-the-gifted/gifted.png">
+<meta property="og:updated_time" content="2017-05-10T13:06:23.477Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Git-Cơ bản về Git">
-<meta name="twitter:description" content="Đây là bài mình tổng hợp một số kiến thức cơ bản về Git, giúp bạn có thể hình dung được cách hoạt động git và sử dụng được một số tính năng cơ bản. Happy Time! I. Git là gì ? Git là một “Hệ thống q">
-<meta name="twitter:image" content="https://squalle0nhart.github.io/2017/04/26/git-basic/logo.png">
+<meta name="twitter:title" content="The Secret of the Gifted">
+<meta name="twitter:description" content="You might be wondering whether work is really for you. You might have noticed that skilled people seem to have a special gift for the work. It comes easily and naturally to them, and though you love">
+<meta name="twitter:image" content="https://squalle0nhart.github.io/2017/05/09/secret-of-the-gifted/gifted.png">
 <meta property="fb:app_id" content="100001822658424">
     
     
@@ -241,20 +238,20 @@
         <div class="post-header main-content-wrap text-left">
     
         <h1 class="post-title" itemprop="headline">
-            Git-Cơ bản về Git
+            The Secret of the Gifted
         </h1>
     
     
         <div class="post-meta">
-    <time itemprop="datePublished" datetime="2017-04-26T00:34:09+07:00">
+    <time itemprop="datePublished" datetime="2017-05-09T20:34:09+07:00">
 	
-		    Th04 26, 2017
+		    Th05 09, 2017
     	
     </time>
     
         <span>trong </span>
         
-    <a class="category-link" href="/categories/developer/">developer</a>
+    <a class="category-link" href="/categories/life/">life</a>, <a class="category-link" href="/categories/life/cuoc-song/">cuộc sống</a>
 
 
     
@@ -265,97 +262,10 @@
     
     <div class="post-content markdown" itemprop="articleBody">
         <div class="main-content-wrap">
-            <img src="/2017/04/26/git-basic/logo.png" alt="Hexo" title="Hexo">
-<p>  Đây là bài mình tổng hợp một số kiến thức cơ bản về Git, giúp bạn có thể hình dung được cách hoạt động git và sử dụng được một số tính năng cơ bản. Happy Time!</p>
-<h3 id="I-Git-la-gi"><a href="#I-Git-la-gi" class="headerlink" title="I. Git là gì ?"></a>I. Git là gì ?</h3><p> <strong>Git</strong> là một “<strong>Hệ thống quản lý phiên bản phân tán</strong>“. Nói đơn giản nó giúp bạn lưu lại phiên bản của các lần thay đổi mã nguồn và có thể dễ dàng tìm lại mà<br> không cần phải copy mã nguồn và lưu ở đâu đó. Một người khác cũng có thể xem các thay đổi này của bạn ở từng phiên bản, họ có thể đối chiếu sự thay đổi theo từng phiên bản của<br> bạn và gộp vào phiên bản của họ. Cuối cùng tất cả các phiên bản đều được đưa lên một kho chứa mã nguồn. </p>
-<p>Chú ý : <strong>Git</strong> là một mô hình hệ thống. <strong>Github</strong>,<strong>Gitlab</strong>,… chỉ là một máy chủ dịch vụ xây dựng theo mô hình git giúp cho người dùng có thể tạo tài khoản và tự quản lý các kho chứa mã nguồn riêng của mình </p>
-<h3 id="II-Cai-dat"><a href="#II-Cai-dat" class="headerlink" title="II. Cài đặt:"></a>II. Cài đặt:</h3><p>  Mac: <a href="https://git-scm.com/download/mac" target="_blank" rel="external">https://git-scm.com/download/mac</a></p>
-<p>  Windows: <a href="https://git-for-windows.github.io/" target="_blank" rel="external">https://git-for-windows.github.io/</a></p>
-<p>  Linux: <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank" rel="external">https://git-scm.com/book/en/v2/Getting-Started-Installing-Git</a></p>
-<h3 id="III-Tao-va-checkout-mot-repository"><a href="#III-Tao-va-checkout-mot-repository" class="headerlink" title="III. Tạo và checkout một repository"></a>III. Tạo và checkout một repository</h3><ul>
-<li><p>Để tạo một repositort mới tạo một thư mục mới, mở nó lên và dùng lệnh: </p>
-<pre><code>git init. 
-</code></pre></li>
-<li><p>Để checkout một repo:</p>
-<ol>
-<li><p>Đối với Repo nội bộ: </p>
-<pre><code>git clone /path/to/repository
-</code></pre></li>
-<li><p>Đối với Remote repo:  </p>
-<pre><code>git clone username@host:/path/to/repository      
-</code></pre></li>
-</ol>
-</li>
-</ul>
-<h3 id="IV-Git-Workflow"><a href="#IV-Git-Workflow" class="headerlink" title="IV. Git Workflow"></a>IV. Git Workflow</h3><img src="/2017/04/26/git-basic/workflow.png" alt="Hexo" title="Hexo">
-<p>Một repo của git bao gồm 3 khu vực chính: </p>
-<ul>
-<li><strong>Thư mục đang làm việc (Working directory)</strong>: Thư mục này lưu trữ các file mã nguồn của bạn.</li>
-<li><strong>Index (hay Stagging Area)</strong>: Chứa thông tin các file chuẩn bị được commit </li>
-<li><strong>Repository</strong>: Kho chứa mã nguồn, nơi lưu lại tất cả các phiên bản mã nguồn của bạn</li>
-</ul>
-<p>Thông thường git sẽ hoạt động theo luồng như sau: </p>
-<ol>
-<li>Bạn sửa file trong thư mục đang làm việc (working directory)</li>
-<li>Git sẽ tạo 1 bản snapshot file này và đưa vào mục các file theo dõi (Staging Area) </li>
-<li>Bạn thực hiện commit, git sẽ lấy các file trong mục theo dõi và lưu các snapshot của file nó vào thư mục git của bạn</li>
-</ol>
-<h3 id="V-Lenh-add-va-commit"><a href="#V-Lenh-add-va-commit" class="headerlink" title="V. Lệnh add và commit :"></a>V. Lệnh add và commit :</h3><ul>
-<li><p>Bạn có thể thêm các file vào mục staging area bằng lệnh add :</p>
-<pre><code>git add &lt;filename&gt;
-</code></pre><p> hoặc</p>
-<pre><code>git add 
-</code></pre><p> để thêm 1 file cụ thể hoặc tất cả vào mục staging area.</p>
-</li>
-<li><p>Lưu các thay đổi vào local repo của bạn </p>
-<pre><code>git commit -m &quot;Commit message&quot;
-</code></pre></li>
-</ul>
-<h3 id="VI-Day-thay-doi-cua-ban-len-remote-repository"><a href="#VI-Day-thay-doi-cua-ban-len-remote-repository" class="headerlink" title="VI. Đẩy thay đổi của bạn lên remote repository"></a>VI. Đẩy thay đổi của bạn lên remote repository</h3><ul>
-<li>Sau khi bạn đã commit xong thay đổi của bạn. Lúc này các thay đổi của bạn được ở mục <strong>HEAD</strong> (dễ hiểu hơn là phiên bản mới nhất). Bây giờ để đẩy các thay đổi mới nhất lên <strong>remote repository</strong> dùng lệnh sau</li>
-</ul>
-<pre><code>    git push origin master                 
-
-trong đó **master** là nhánh bạn muốn đẩy lên.
-</code></pre><ul>
-<li>Nếu <strong>local repository</strong> của bạn chưa được kết nối với remote server thì dùng lệnh: </li>
-</ul>
-<pre><code>git remote add origin &lt;server&gt;
-</code></pre><h3 id="VII-Nhanh-Branch"><a href="#VII-Nhanh-Branch" class="headerlink" title="VII. Nhánh (Branch)"></a>VII. Nhánh (Branch)</h3><p>Trong git <strong>Branch</strong> được dùng để tách biệt môi trường làm việc cho developer. </p>
-<img src="/2017/04/26/git-basic/branch.png" alt="Hexo" title="Hexo">
-<p>Ví dụ: <strong>Bạn muốn tạo ra một phiên bản thử nghiệm với môi trường code hiện tại nhưng lại không muốn nó ảnh hưởng tới các file code hiện tại, việc này có thể thực hiện bằng cách clone lại chính repository bạn đang dùng hoặc copy ra một chỗ khác nhưng 2 cách trên đều rất mất công và khó khăn cho việc đồng bộ hóa code</strong>. </p>
-<p>Để xử lý vấn đề trên <strong>Git</strong> cung cấp cho ta cơ chế phân nhánh. Nhánh ban đầu khi bạn tạo repository là nhánh <strong>master</strong>, nhánh này dùng để chứa các code chính trong project</p>
-<ul>
-<li><p>Tạo một nhánh: quay lại ví dụ lúc nãy để tạo một bản thử nghiệm bạn muốn mà không làm ảnh hưởng tới các file code hiện tại bạn cần tạo một nhánh mới gọi là <strong>develop</strong> bằng lệnh:</p>
-<pre><code>git checkout -b develop
-</code></pre><p>  lúc này toàn bộ mã nguồn từ nhánh master sẽ được copy sang nhánh <strong>develop</strong>, <strong>mọi thay đổi</strong> trên nhánh <strong>develop</strong> sẽ không ảnh hưởng tới nhánh <strong>master</strong> và ngược lại.</p>
-</li>
-<li><p>Chuyển nhánh: Để chuyển nhánh ta dùng lệnh</p>
-<pre><code>git checkout &lt;tên nhánh&gt;
-</code></pre></li>
-<li><p>Xóa nhánh: Để xóa một nhánh dùng lệnh sau </p>
-<pre><code>git branch -d &lt;tên nhánh&gt;
-</code></pre></li>
-<li><p>Cập nhật lên remote repository: Để người khác thấy được nhánh của bạn thì phải push nhánh đó lên remote repository bằng lệnh sau</p>
-<pre><code>git push origin &lt;tên nhánh&gt;
-</code></pre></li>
-</ul>
-<h3 id="VIII-Cap-nhat-va-tich-hop-update-and-merge"><a href="#VIII-Cap-nhat-va-tich-hop-update-and-merge" class="headerlink" title="VIII. Cập nhật và tích hợp (update and merge)"></a>VIII. Cập nhật và tích hợp (update and merge)</h3><img src="/2017/04/26/git-basic/pull.png" alt="Hexo" title="Hexo">
-<ul>
-<li><p><strong>Pull</strong>: Để cập nhật local repository của bạn với lần commit mới nhất trên remote repository dùng lệnh:</p>
-<pre><code>git pull
-</code></pre><p>  lệnh này sẽ tự động lấy code mới trên remote về(fetch) và tiến hành trộn(merge_ với local repository của bạn </p>
-</li>
-<li><p>Trộn nhánh: Để trộn một nhánh bất kỳ vào nhánh bạn đang sử dụng dùng lệnh sau</p>
-<pre><code>git merge &lt;tên nhánh&gt;
-</code></pre><p><strong>Chú ý:</strong> Trong cả 2 trường hợp trên Git sẽ cố gắng tự merge code của bạn. Tuy nhiên đôi khi sẽ có xung đột(conflict) mà Git không thể trộn code được. Lúc này bạn phải xử lý các xung đột thủ công bằng cách chỉnh sửa các tập tin được thông báo.</p>
-</li>
-</ul>
-<h3 id="IX-Nhan-Tag"><a href="#IX-Nhan-Tag" class="headerlink" title="IX. Nhãn (Tag)"></a>IX. Nhãn (Tag)</h3><p>Mỗi khi phát hành một phiên bản của phần mềm ta nên tạo nhãn (tag) cho phiên bản đó. Để tạo 1 tag mới ta dùng lệnh sau:</p>
-<pre><code>git tag &lt;tên phiên bản&gt;  &lt;checksum&gt;
-</code></pre><ul>
-<li><strong><checksum></checksum></strong> ở đây thường là mã commit của bạn hoặc 1 đoạn trong mã commit.</li>
-</ul>
+            <img src="/2017/05/09/secret-of-the-gifted/gifted.png" alt="Hexo" title="Hexo">
+<p> You might be wondering whether work is really for you. You might have noticed that skilled people seem to have a special gift for the work. It comes easily and naturally to them, and though you love your work, you wonder if you are gifted enough to succeed as a another. Well, here is a little secret about gifts. There are two kinds. First, there is the innate gift of a given skill. This is the minor gift. If you have this gift, a skill such as game design, mathematics, or playing the piano comes naturally to you. You can do it easily, almost without thinking. But you don’t necessarily enjoy doing it. There are millions of people with minor gifts of all kinds, who, though skilled, never do anything great with their gifted skill, and this is because they lack the major gift. The major gift is love of the work. This might seem backward. How can love of using a skill be more important than the skill itself? It is for this simple reason: If you have the major gift, the love of your work, you will continue using whatever limited skills you have. And you will keep doing it. And your love for the work will shine through, infusing your work with an indescribable glow that only comes from the love of doing it. And through practice, your skills, like muscles, will grow and become more powerful, until eventually your skills will be as great, or greater than, those of someone who only has the minor gift. And people will say, “ Wow. That one is a truly gifted guy. ” They will think you have the minor gift, of course, but only you will know the secret source of your skill, which is the major gift: love of the work. </p>
+<p>   But maybe you aren’t sure if you have the major gift. You aren’t sure if you truly love your work. I have encountered many people who started just to see what it was like, only to find that to their surprise, they truly love the work. There is only one way to find out if you have the major gift. Start down the path, and see if it makes your heart sing. </p>
+<p>  <strong>Art of Game Designer - Jesse Schell</strong> </p>
 
             
         </div>
@@ -365,7 +275,7 @@ trong đó **master** là nhánh bạn muốn đẩy lên.
             <div class="post-footer-tags">
                 <span class="text-color-light text-small">TAGGED IN</span><br/>
                 
-    <a class="tag tag--primary tag--small t-link" href="/tags/developer/">developer</a> <a class="tag tag--primary tag--small t-link" href="/tags/git/">git</a>
+    <a class="tag tag--primary tag--small t-link" href="/tags/life/">life</a> <a class="tag tag--primary tag--small t-link" href="/tags/xam-quan/">xàm quần</a>
 
             </div>
         
@@ -375,7 +285,7 @@ trong đó **master** là nhánh bạn muốn đẩy lên.
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/04/18/guide-create-hexo-blog/"  data-tooltip="Hướng dẫn tạo Blog đơn giản với Hexo và Nodejs">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/04/26/git-basic/"  data-tooltip="Git-Cơ bản về Git">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">QUAY LẠI</span>
@@ -383,7 +293,7 @@ trong đó **master** là nhánh bạn muốn đẩy lên.
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/05/09/secret-of-the-gifted/" data-tooltip="The Secret of the Gifted">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/05/10/song-de-lam-gi/" data-tooltip="Sống để làm gì ?">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">TIẾP</span>
                     <i class="fa fa-angle-right"></i>
@@ -401,7 +311,7 @@ trong đó **master** là nhánh bạn muốn đẩy lên.
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://squalle0nhart.github.io/2017/04/26/git-basic/">
+                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://squalle0nhart.github.io/2017/05/09/secret-of-the-gifted/">
                     <i class="fa fa-facebook-official"></i>
                 </a>
             </li>
@@ -409,7 +319,7 @@ trong đó **master** là nhánh bạn muốn đẩy lên.
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://squalle0nhart.github.io/2017/04/26/git-basic/">
+                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://squalle0nhart.github.io/2017/05/09/secret-of-the-gifted/">
                     <i class="fa fa-twitter"></i>
                 </a>
             </li>
@@ -417,7 +327,7 @@ trong đó **master** là nhánh bạn muốn đẩy lên.
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://squalle0nhart.github.io/2017/04/26/git-basic/">
+                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://squalle0nhart.github.io/2017/05/09/secret-of-the-gifted/">
                     <i class="fa fa-google-plus"></i>
                 </a>
             </li>
@@ -467,7 +377,7 @@ trong đó **master** là nhánh bạn muốn đẩy lên.
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/04/18/guide-create-hexo-blog/"  data-tooltip="Hướng dẫn tạo Blog đơn giản với Hexo và Nodejs">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/04/26/git-basic/"  data-tooltip="Git-Cơ bản về Git">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">QUAY LẠI</span>
@@ -475,7 +385,7 @@ trong đó **master** là nhánh bạn muốn đẩy lên.
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/05/09/secret-of-the-gifted/" data-tooltip="The Secret of the Gifted">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/05/10/song-de-lam-gi/" data-tooltip="Sống để làm gì ?">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">TIẾP</span>
                     <i class="fa fa-angle-right"></i>
@@ -493,7 +403,7 @@ trong đó **master** là nhánh bạn muốn đẩy lên.
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://squalle0nhart.github.io/2017/04/26/git-basic/">
+                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://squalle0nhart.github.io/2017/05/09/secret-of-the-gifted/">
                     <i class="fa fa-facebook-official"></i>
                 </a>
             </li>
@@ -501,7 +411,7 @@ trong đó **master** là nhánh bạn muốn đẩy lên.
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://squalle0nhart.github.io/2017/04/26/git-basic/">
+                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://squalle0nhart.github.io/2017/05/09/secret-of-the-gifted/">
                     <i class="fa fa-twitter"></i>
                 </a>
             </li>
@@ -509,7 +419,7 @@ trong đó **master** là nhánh bạn muốn đẩy lên.
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://squalle0nhart.github.io/2017/04/26/git-basic/">
+                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://squalle0nhart.github.io/2017/05/09/secret-of-the-gifted/">
                     <i class="fa fa-google-plus"></i>
                 </a>
             </li>
@@ -540,7 +450,7 @@ trong đó **master** là nhánh bạn muốn đẩy lên.
             
             
             <li class="share-option">
-                <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://squalle0nhart.github.io/2017/04/26/git-basic/">
+                <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://squalle0nhart.github.io/2017/05/09/secret-of-the-gifted/">
                     <i class="fa fa-facebook-official"></i><span>Chia sẻ lên Facebook</span>
                 </a>
             </li>
@@ -548,7 +458,7 @@ trong đó **master** là nhánh bạn muốn đẩy lên.
             
             
             <li class="share-option">
-                <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https://squalle0nhart.github.io/2017/04/26/git-basic/">
+                <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https://squalle0nhart.github.io/2017/05/09/secret-of-the-gifted/">
                     <i class="fa fa-twitter"></i><span>Chia sẻ lên Twitter</span>
                 </a>
             </li>
@@ -556,7 +466,7 @@ trong đó **master** là nhánh bạn muốn đẩy lên.
             
             
             <li class="share-option">
-                <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https://squalle0nhart.github.io/2017/04/26/git-basic/">
+                <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https://squalle0nhart.github.io/2017/05/09/secret-of-the-gifted/">
                     <i class="fa fa-google-plus"></i><span>Chia sẻ lên Google+</span>
                 </a>
             </li>
@@ -721,9 +631,9 @@ trong đó **master** là nhánh bạn muốn đẩy lên.
     
         <script>
              var disqus_config = function () {
-                 this.page.url = 'https://squalle0nhart.github.io/2017/04/26/git-basic/';
+                 this.page.url = 'https://squalle0nhart.github.io/2017/05/09/secret-of-the-gifted/';
                  
-                    this.page.identifier = '2017/04/26/git-basic/';
+                    this.page.identifier = '2017/05/09/secret-of-the-gifted/';
                  
              };
             (function() {
